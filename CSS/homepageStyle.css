@@ -41,6 +41,7 @@ h2 {
     height: 100px;
     background-color: white;
     z-index: 2;
+    top: 0;
 }
 
 .redSec{
@@ -105,7 +106,7 @@ margin: 5px;
     font-size: 1.5em;
     position:absolute;
     left: 65px;
-    top: 150px;
+    top: 143px;
     text-transform: uppercase;
 }
 
@@ -144,11 +145,58 @@ margin: 5px;
     position:absolute;
     top: 430px; 
     text-align: justify;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .w3-button{
     position: absolute;
-    top: 590px;
-    left: 110px;
+    top: 600px;
+    left: 115px;
+    background-color: #252525;
+    color: white;
+}
 
+.otherNews{
+    font-family: 'Playfair Display', serif;
+    text-decoration-line: underline;
+    position:absolute;
+    top: 650px; 
+    left: 20px;
+    font-size: 1.2em; 
+}
+
+.newsImage{
+    width: 150px;
+    height: 120px;
+    position:absolute;
+    top: 690px; 
+    left: 20px;
+}
+
+.paraSm{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    width: 150px;
+    height: 120px;
+    position:absolute;
+    top: 690px; 
+    right: 20px;
+}
+
+.newsImageTwo{
+    width: 150px;
+    height: 120px;
+    position:absolute;
+    top: 830px; 
+    right: 20px;
+}  
+
+.paraTwo{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    width: 150px;
+    height: 120px;
+    position:absolute;
+    top: 830px; 
+    left: 20px; 
 }
