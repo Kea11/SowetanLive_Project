@@ -18,9 +18,15 @@ close.addEventListener('click',()=>{
 window.location = "index.html"
 });
 
+<<<<<<< HEAD
 var d = new Date();
 d.setFullYear(2020);
 document.getElementById("Date").innerHTML = d;
+=======
+// var d = new Date();
+// d.setFullYear(2020);
+// document.getElementById("Date").innerHTML = d;
+>>>>>>> cd90d06839fdb0538bedd465339aad94ae3c3f2a
 
 
   
