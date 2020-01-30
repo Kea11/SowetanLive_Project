@@ -23,6 +23,32 @@ p{
     height: 80px;
 }
 
+
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color:#FF0000;
+    padding: 60px 120px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; 
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+ 
+
 #navbar {
     position: absolute;
     background-color: white;
@@ -111,6 +137,7 @@ margin: 5px;
     font-size: 1.5em;
     position:absolute;
     left: 65px;
+    top: 150px;
     top: 143px;
     text-transform: uppercase;
 }
@@ -153,6 +180,7 @@ margin: 5px;
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
+
 }
 
 .w3-button{
@@ -310,5 +338,6 @@ margin: 5px;
     top: 40px;
     left: 125px;
     line-height: 17px;
+
 
 }
