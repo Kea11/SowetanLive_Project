@@ -13,14 +13,42 @@ h2 {
 
 .logo{
     position: absolute;
+    background-color: white;
     left: 80px;
     top: 15px;
     width: 200px;
     height: 80px;
 }
 
+
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color:#FF0000;
+    padding: 60px 120px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; 
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+ 
+
 #navbar {
     position: absolute;
+    background-color: white;
     top: 20px;
     border-style: none;
 }
@@ -29,6 +57,7 @@ h2 {
     width: 30px;
     height: 30px;
     position: absolute;
+    background-color: white;
     right:20px;
     top: 35px;
 }
@@ -36,6 +65,8 @@ h2 {
 .header{
     position: fixed;
     height: 100px;
+    background-color: white;
+    z-index: 2;
 }
 
 .redSec{
@@ -93,4 +124,57 @@ margin: 5px;
 .hold{
     position: relative;
     left: 100px;
+}
+
+.heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    position:absolute;
+    left: 65px;
+    top: 150px;
+    text-transform: uppercase;
+}
+
+.megaphone{
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    right: 70px;
+    top: 150px;
+    stroke: #FF0000;
+    stroke-width: 1em;
+}
+
+.BreakingImage{
+    width: 360px;
+    height: 200px;
+    position:absolute;
+    top: 183px;
+}
+
+.figure-caption{
+    position:absolute;
+    top: 380px;
+}
+
+.subheadingOne{
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    position:absolute;
+    top: 400px; 
+    left: 120px;
+    font-size: 1.2em;
+
+}
+.para{
+    position:absolute;
+    top: 430px; 
+    text-align: justify;
+}
+
+.w3-button{
+    position: absolute;
+    top: 590px;
+    left: 110px;
+
 }

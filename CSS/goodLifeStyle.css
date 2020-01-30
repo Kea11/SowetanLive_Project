@@ -81,8 +81,10 @@ h2 {
 }
 .footer{
     background-color: lightgrey;
+    height: 230px;
     position: absolute;
-    bottom: 0;
+    top: 1010px;
+    bottom: 0; 
     padding: 20px;
 }
 
@@ -108,7 +110,7 @@ margin: 5px;
     font-size: 1.5em;
     position: relative;
     top: 20px;
-    left: 90px;
+    left: 60px;
 
     
 }
@@ -137,10 +139,10 @@ margin: 5px;
     width: 200px;
     height: 90px;
     background-color: #252525;
-    opacity: 0.6;
+    opacity: 0.5;
     position: absolute;
     left: 80px;
-    top: 60px;
+    top: 50px;
     
 }
 
@@ -165,10 +167,10 @@ margin: 5px;
     width: 200px;
     height: 90px;
     background-color: #252525;
-    opacity: 0.6;
+    opacity: 0.5;
     position: relative;
     bottom: 140px;
-    left: 60px;
+    left: 70px;
 }
 
 .BssubTra{
@@ -177,6 +179,7 @@ margin: 5px;
     color: white;
     text-align: center;
     position: relative;
+    left: 40px;
     top: 30px;
 }
 
@@ -190,31 +193,34 @@ margin: 5px;
     width: 200px;
     height: 90px;
     background-color: #252525;
-    opacity: 0.6;
+    opacity: 0.5;
     position: relative;
     bottom: 140px;
-    left: 60px;
+    left: 70px;
 }
 
 .BssubHealth{
     font-family: 'Playfair Display', serif;
     font-size:1.2em;
-    color: white;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
+    left: 60px;
     top: 30px;
 }
 
 .load{
     position: absolute;
   top: 870px;
-  left: 120px;
+  left: 130px;
 }
 
 button{
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 1em;
-    border-radius: 30%;
+    border-radius: 50px;
+    padding: 5 10;
     color: white;
     background-color: #FF0000;
     border: 1px solid black;
@@ -223,14 +229,76 @@ button{
 .CallToAction{
     position: absolute;
     top: 920px;
-    left: 20px;
-background-color: black;
-padding: 25 10;
+    left: 10px;
+    background-color: black;
+    width: 340px;
+    height: 70px;
 }
 
 .Club{
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
     color: white;
-    text-align: center;
+    text-align: justify;
+    position: relative;
+    left: 30px;
+    top: 20px;
 } 
+
+#Page2{
+    display: none;
+}
+
+.roundimg{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 43px;
+}
+.WedHeading{
+    position: absolute;
+    top: 450px;
+    width: 110px;
+    background-color: #FF0000;
+    padding: 2 2 0 2;
+}
+
+.WedHead{
+    font-family: 'Playfair Display', serif;
+    font-size:16;
+    text-align: center;
+    color: white;
+}
+
+.RedLine{
+    width: 100vw;
+    height: 5px;
+    position: absolute;
+    top: 475px;
+    background-color: #FF0000;
+}
+.para{
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
+    margin: 1em;
+    text-align: justify;
+    position: absolute;
+    top: 482px;
+}
+
+.back1{
+position: absolute;
+top: 970px;
+}
+
+#backIcon{
+    width: 30px;
+    height: 30px;
+}
+.last{
+    position: relative;
+    left: 40px;
+    bottom: 25px;
+}
