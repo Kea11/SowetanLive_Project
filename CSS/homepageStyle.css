@@ -1,4 +1,4 @@
-*{
+*{  box-sizing: border-box;
     margin:0;
 }
 
@@ -11,10 +11,13 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+p{
+    font-family: 'Merriweather Sans', sans-serif;
+}
 .logo{
     position: absolute;
     background-color: white;
-    left: 80px;
+    left: 82px;
     top: 15px;
     width: 200px;
     height: 80px;
@@ -86,7 +89,9 @@ h2 {
 .footer{
     background-color: lightgrey;
     position: absolute;
+    top: 1340px;
     bottom: 0;
+    height: 230px;
     padding: 20px;
 }
 
@@ -115,7 +120,7 @@ margin: 5px;
     height: 25px;
     position:absolute;
     right: 70px;
-    top: 150px;
+    top: 146px;
     stroke: #FF0000;
     stroke-width: 1em;
 }
@@ -136,31 +141,35 @@ margin: 5px;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     position:absolute;
-    top: 400px; 
+    top: 420px; 
     left: 120px;
     font-size: 1.2em;
 
 }
 .para{
     position:absolute;
-    top: 430px; 
-    text-align: justify;
+    padding: 10px;
+    top: 450px; 
+    text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
 }
 
 .w3-button{
     position: absolute;
-    top: 600px;
-    left: 115px;
+    top: 672px;
+    left: 85px;
     background-color: #252525;
     color: white;
+    width: 200px;
+    height: 50px;
 }
 
 .otherNews{
     font-family: 'Playfair Display', serif;
     text-decoration-line: underline;
     position:absolute;
-    top: 650px; 
+    top: 750px; 
     left: 20px;
     font-size: 1.2em; 
 }
@@ -169,34 +178,137 @@ margin: 5px;
     width: 150px;
     height: 120px;
     position:absolute;
-    top: 690px; 
+    top: 790px; 
     left: 20px;
 }
 
 .paraSm{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: justify;
+    line-height: 20px;
     width: 150px;
     height: 120px;
     position:absolute;
-    top: 690px; 
+    top: 797px; 
     right: 20px;
+    line-height: 17px;
+}
+
+.divider{
+    width: 320px;
+    height: 0.5px;
+    background-color: #252525;
+    position: absolute;
+    top: 945px;
+    left: 20px;
 }
 
 .newsImageTwo{
     width: 150px;
     height: 120px;
     position:absolute;
-    top: 830px; 
+    top: 940px; 
     right: 20px;
 }  
 
 .paraTwo{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: justify;
+    line-height: 20px ;
     width: 150px;
     height: 120px;
     position:absolute;
-    top: 830px; 
+    top: 947px; 
     left: 20px; 
+    line-height: 17px;
+}
+
+/* .scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card{  
+    display: inline-block;
+} */
+
+.goodLife{
+    border-style: groove;
+    margin: 10px;
+    height: 100px;
+    position: absolute;
+    top: 1100px;
+    background-color: lightgray;
+    width: 340px;
+}
+
+.sunglasses{
+    width: 105px;
+    height: 85px;
+    padding-left: 10px;
+    position: absolute;
+    top:7px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+}
+
+.goodLifeHead{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    position:absolute;
+    top: 7px;
+    left: 145px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.goodLifePara{
+    text-align: justify;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 125px;
+    line-height: 17px;
+
+}
+
+.opinion{
+    border-style: groove;
+    margin: 10px;
+    height: 100px;
+    position: absolute;
+    top: 1200px;
+    background-color: lightgray;
+    width: 340px;
+}
+
+.chat{
+    width: 95px;
+    height: 80px;
+    padding-left: 10px;
+    position: absolute;
+    top:7px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+}
+
+.opinionHead{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    position:absolute;
+    top: 7px;
+    left: 148px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.opinionPara{
+    text-align: justify;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 125px;
+    line-height: 17px;
+
 }
