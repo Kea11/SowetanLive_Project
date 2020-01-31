@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 const back = document.querySelector('.back1');
 
 back.addEventListener('click',()=>{
     window.location = 'goodlife.html';
 })
 
-=======
 <<<<<<< HEAD
 const SecPage = document.querySelector('#Page2');
 const go = document.querySelector('.BssubWed');
