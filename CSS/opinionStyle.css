@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --------THE HEADER SECTION-------- */
+.logo{
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    width: 200px;
+    height: 80px;
+}
+
+#navbar {
+    position: absolute;
+    top: 20px;
+    border-style: none;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 35px;
+}
+
+.header{
+    top: 0;
+    position: fixed;
+    height: 100px;
+    z-index: 100;
+    background: white;
+    width: 100vw;
+}
+
+.redSec{
+    position: relative;
+    top:100px;
+}
+
+.TopLine{
+    width: 360px;
+    height: 1.5px;
+    background-color: #252525;
+}
+
+.datesec{
+    z-index: -1;
+    background-color:#FF0000;
+    width: 360px;
+    height: 30px;
+
+}
+
+.bottomLine{
+    width: 360px;
+    height: 1.5px;
+    background-color: #252525;
+}
+
+#sub{
+    position: absolute;
+    right: 10px;
+    top: -0.5px;
+
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    position: relative;
+    left: 50px;
+}
+
+.footeTxt{
+font-family: 'Merriweather Sans', sans-serif;
+text-align: center;
+margin: 5px;
+}
+
+.hold{
+    position: relative;
+    left: 100px;
+}
+
+
+/* --------Opinion page-------- */
+
+.Kheading {
+    font-family: 'Playfair Display', serif;
+    transform: translateY(150px);
+    font-size: 2em;
+}
+
+#speechBbl {
+    width: 50px;
+    stroke: #FF0000;
+    stroke-width: 0.2em;
+}
+
+.opinionSec {
+    margin: 10px;
+    border-style: groove;
+    position: relative;
+    top: 100px;
+    background-color: rgb(243, 243, 243);
+}
+
+.Ktitle {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.Ksubhead {
+    font-family: 'Playfair Display', serif;
+}
+
+.para {
+    text-align: initial;
+    width: 50%;
+    word-spacing: 1px;
+}
+
+.Kauth {
+    color: #999999ff;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.pic {
+    width: 150px;
+    height: 120px;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    bottom: 120px;
+}
+
+
+/* -------ADDING YOUR COMMENT SECTION-------- */
+.YourSay {
+    position: relative;
+    top: 60px;
+    display: inline-block;
+    margin-left: 60px;    
+}
+
+.form {
+    position: relative;
+    top: 80px;
+    margin-left: 10px;
+}
+
+#name {
+    width: 235px;
+    position: relative;
+    left: 50px;
+}
+
+#article {
+    width: 235px;
+    position: relative;
+    left: 37px;
+}
+
+#comment {
+    width: 235px;
+    position: relative;
+    left: 17px;
+    height: 100px;
+}
+
+#submit {
+    position: relative;
+    left: 260px;
+    top: 80px;
+    border-radius: 40%;
+    padding: 2px;
+    width: 80px;
+    background-color: #FF0000;
+    color: white;
+}
+
+/* >>>>>>>>>>>>> CLICKED PAGE <<<<<<<<<<<<<< */
+
+.pic2 {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    top: 170px;
+    left: 50px;
+}
+
+.letter {
+    background: #FF0000;
+    display: inline-block;
+    position: relative;
+    top: 250px;
+    padding: 3px;
+    margin-left: 10px;
+    color: white;
+}
+
+.letterbot {
+    background: #FF0000;
+    position: relative;
+    top: 245px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 5px;
+    
+}
+
+.letText {
+    position: relative;
+    top: 280px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.returnIcon {
+    width: 10%;
+    position: relative;
+    top: 320px;
+    margin-left: 10px;
+}
+
+#Kback {
+    position: relative;
+    top: 295px;
+    left: 50px;
+    font-size: ;
+}
+
+
+/* -------THE FOOTER-------- */
+.footer{
+    background-color: lightgrey;
+    position: absolute;
+    top: 1470px;
+    bottom: 0;
+    height: 220px;
+    padding: 20px;
+}
