@@ -235,6 +235,21 @@ margin: 5px;
     text-align: justify;
 }
 
+.returnIcon {
+    width: 10%;
+    position: relative;
+    top: 320px;
+    margin-left: 10px;
+}
+
+#Kback {
+    position: relative;
+    top: 295px;
+    left: 50px;
+    font-size: ;
+}
+
+
 /* -------THE FOOTER-------- */
 .footer{
     background-color: lightgrey;
