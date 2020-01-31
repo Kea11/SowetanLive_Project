@@ -338,6 +338,42 @@ margin: 5px;
     top: 40px;
     left: 125px;
     line-height: 17px;
+}
 
+/* code for the popup */
 
+.popUpWrapper{
+    background-color: #FF0000;
+    position: fixed;
+    width: 360px;
+    height: 400px;
+    top:0;
+    left:0;
+    display: none;
+    z-index: 100;
+}
+
+.popUp{
+    background: white;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    position: relative;
+    padding: 5%;
+}
+
+.popUp a{
+    background: #252525;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-style: groove;
+}
+
+.closePop{
+    position: absolute;
+    top:5px;
+    right: 8px;
+    cursor: pointer;
 }
