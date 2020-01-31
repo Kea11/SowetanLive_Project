@@ -158,7 +158,7 @@ margin: 5px;
 
 .BsImg2{
     position: absolute;
-   top: 300px;
+   top: 220px;
    left: 15px;
     
 }
@@ -185,7 +185,7 @@ margin: 5px;
 
 .BsImg3{
     position: absolute;
-    top: 520px;
+    top: 440px;
    left: 15px;
 }
 
@@ -212,8 +212,8 @@ margin: 5px;
 
 .load{
     position: absolute;
-  top: 870px;
-  left: 130px;
+  top: 720px;
+  left: 150px;
 }
 
 button{
@@ -228,7 +228,7 @@ button{
 
 .CallToAction{
     position: absolute;
-    top: 920px;
+    top: 790px;
     left: 10px;
     background-color: black;
     width: 340px;
