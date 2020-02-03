@@ -73,11 +73,18 @@ h2 {
     background-color: #252525;
 }
 
+#navdate {
+    font-size: 17px;
+    margin-left: 10px;
+    color: white;
+}
+
 #sub{
     position: absolute;
     right: 10px;
     top: -0.5px;
-
+    font-size: 17px;
+    color: white;
 }
 
 .icon{
@@ -129,12 +136,14 @@ margin: 5px;
 
 .Ksubhead {
     font-family: 'Playfair Display', serif;
+    color: black;
 }
 
 .para {
     text-align: initial;
     width: 50%;
     word-spacing: 1px;
+    color: black;
 }
 
 .Kauth {
@@ -190,12 +199,16 @@ margin: 5px;
     position: relative;
     left: 260px;
     top: 80px;
-    border-radius: 40%;
+    border-radius: 50px;
     padding: 2px;
     width: 80px;
     background-color: #FF0000;
     color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: 1px solid black;
+    font-size: 1em;
 }
+
 
 /* >>>>>>>>>>>>> CLICKED PAGE <<<<<<<<<<<<<< */
 
@@ -234,6 +247,27 @@ margin: 5px;
     margin: 10px;
     text-align: justify;
 }
+
+#allBack {
+    color: black;
+}
+
+.returnIcon {
+    width: 10%;
+    margin-left: 10px;
+    position: relative;
+    top: 320px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+}
+
+#Kback {
+    position: relative;
+    top: 295px;
+    left: 50px;
+    text-decoration: underline;
+}
+
 
 /* -------THE FOOTER-------- */
 .footer{

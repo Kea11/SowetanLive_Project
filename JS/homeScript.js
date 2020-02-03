@@ -47,7 +47,3 @@ AcceptButton.addEventListener('click', () =>{
 });
 
 
-
-  
-
-  
