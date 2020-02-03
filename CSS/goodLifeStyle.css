@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin:0;
 }
 
@@ -226,7 +227,7 @@ button{
 
 .CallToAction{
     position: absolute;
-    top: 790px;
+    top: 770px;
     left: 10px;
     background-color: black;
     width: 340px;
