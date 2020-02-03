@@ -1,4 +1,5 @@
 
+
 // code for the pop up 
  const bod = document.querySelectorAll('body');
  const wrapper = document.querySelector('.popUpWrapper');
@@ -8,6 +9,7 @@ const closePopUp = document.querySelector('.closePop');
 const popUpWrapper = document.querySelector('.popUpWrapper');
 
 const AcceptButton = document.querySelector('.accept');
+
 
 window.addEventListener('pageshow', () => {
      wrapper.style.display = 'block';
