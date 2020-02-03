@@ -23,32 +23,6 @@ p{
     height: 80px;
 }
 
-
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    color:#FF0000;
-    padding: 60px 120px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0; 
-  }
-  
-  .topnav a:hover {
-    color: black;
-  }
- 
-
 #navbar {
     position: absolute;
     background-color: white;
