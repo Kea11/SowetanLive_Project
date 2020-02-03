@@ -290,6 +290,8 @@ top: 970px;
 }
 
 #backIcon{
+    stroke: #FF0000;
+    stroke-width: 2em;
     width: 30px;
     height: 30px;
 }
