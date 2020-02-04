@@ -86,7 +86,9 @@ p{
 
 .date{
     font-size: 1em;
-    /* position: ; */
+    position: absolute;
+    top: 6px;
+    left: 8px;
 }
 .datesec{
     z-index: -1;
@@ -117,7 +119,9 @@ p{
     height: 50px;
     padding: 8px;
     position: relative;
-    left: 50px;
+    left: 31px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
 }
 .footer{
     background-color: lightgrey;
@@ -156,7 +160,7 @@ margin: 5px;
     right: 30px;
     top: 144px;
     stroke: #FF0000;
-    stroke-width: 1em;
+    stroke-width: 0.4em;
 }
 
 .BreakingImage{
@@ -190,16 +194,27 @@ margin: 5px;
 
 }
 
-.w3-button{
+/* {
     position: absolute;
     top: 672px;
-    left: 85px;
-    background-color: #252525;
-    color: white;
-    width: 200px;
-    height: 50px;
-}
+    left: 10px;
+   
+} */
 
+.w3-button{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    top: 215px;
+    left: 10px;
+    width: 340px;
+    height: 70px;
+    background-color: black;
+    color: white;
+   
+}
 .otherNews{
     font-family: 'Playfair Display', serif;
     text-decoration-line: underline;
@@ -234,8 +249,8 @@ margin: 5px;
     height: 0.5px;
     background-color: #252525;
     position: absolute;
-    top: 945px;
-    left: 20px;
+    top: 928px;
+    left: 19px;
 }
 
 .newsImageTwo{
@@ -285,7 +300,7 @@ margin: 5px;
     position: absolute;
     top:7px;
     stroke: #FF0000;
-    stroke-width: 0.8em;
+    stroke-width: 0.4em;
 }
 
 .goodLifeHead{
@@ -325,7 +340,7 @@ margin: 5px;
     position: absolute;
     top:7px;
     stroke: #FF0000;
-    stroke-width: 0.8em;
+    stroke-width: 0.4em;
 }
 
 .opinionHead{
@@ -353,7 +368,7 @@ margin: 5px;
     background-color: #FF0000;
     position: fixed;
     width: 360px;
-    height: 400px;
+    height: 450px;
     top:0;
     left:0;
     display: none;
@@ -367,7 +382,7 @@ margin: 5px;
     max-width: 300px;
     margin: 10% auto;
     position: relative;
-    padding: 5%;
+    padding: 15%;
 }
 
 .popUp a{
