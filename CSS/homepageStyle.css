@@ -84,12 +84,17 @@ p{
     background-color: #252525;
 }
 
+.date{
+    font-size: 1em;
+    /* position: ; */
+}
 .datesec{
     z-index: -1;
     background-color:#FF0000;
     width: 360px;
     height: 30px;
-
+    color: white;
+    font-size: 1em;
 }
 
 .bottomLine{
@@ -101,7 +106,9 @@ p{
 #sub{
     position: absolute;
     right: 10px;
-    top: -0.5px;
+    top: 7px;
+    color: white;
+    font-size: 1em;
 
 }
 
@@ -134,20 +141,20 @@ margin: 5px;
 
 .heading{
     font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
+    font-size: 2em;
     position:absolute;
-    left: 65px;
-    top: 150px;
-    top: 143px;
+    left: 25px;
+    top: 138px;
+    /* top: 143px; */
     text-transform: uppercase;
 }
 
 .megaphone{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     position:absolute;
-    right: 70px;
-    top: 146px;
+    right: 30px;
+    top: 144px;
     stroke: #FF0000;
     stroke-width: 1em;
 }
