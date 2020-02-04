@@ -16,6 +16,7 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+
 /* --------THE HEADER SECTION-------- */
 .logo{
     position: absolute;
@@ -77,25 +78,16 @@ h2 {
     font-size: 17px;
     margin-left: 10px;
     color: white;
+    position: relative;
+    top: 3px;
 }
 
 #sub{
     position: absolute;
     right: 10px;
-    top: -0.5px;
+    bottom: 1px;
     font-size: 17px;
     color: white;
-}
-
-.footeTxt{
-font-family: 'Merriweather Sans', sans-serif;
-text-align: center;
-margin: 5px;
-}
-
-.hold{
-    position: relative;
-    left: 100px;
 }
 
 
@@ -124,11 +116,15 @@ margin: 5px;
 .Ktitle {
     color: #FF0000;
     text-decoration: underline;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .Ksubhead {
     font-family: 'Playfair Display', serif;
     color: black;
+    margin-left: 5px;
+    font-size: 1.2em;
 }
 
 .para {
@@ -136,19 +132,24 @@ margin: 5px;
     width: 50%;
     word-spacing: 1px;
     color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-left: 5px;
+    
 }
 
 .Kauth {
     color: #999999ff;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 10px;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .pic {
     width: 150px;
     height: 120px;
     float: right;
-    margin-right: 10px;
+    margin-right: 5px;
     position: relative;
     bottom: 120px;
 }
@@ -159,7 +160,8 @@ margin: 5px;
     position: relative;
     top: 60px;
     display: inline-block;
-    margin-left: 60px;    
+    margin-left: 60px; 
+    font-family: 'Playfair Display', serif;   
 }
 
 .form {
@@ -172,12 +174,14 @@ margin: 5px;
     width: 235px;
     position: relative;
     left: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #article {
     width: 235px;
     position: relative;
     left: 37px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #comment {
@@ -185,6 +189,7 @@ margin: 5px;
     position: relative;
     left: 17px;
     height: 100px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #submit {
@@ -244,14 +249,22 @@ margin: 5px;
     color: black;
 }
 
-.returnIcon {
-    width: 10%;
+#return {
+    width: 80px;
     margin-left: 10px;
     position: relative;
     top: 320px;
     stroke: #FF0000;
     stroke-width: 0.8em;
     cursor: pointer;
+    border-radius: 50px;
+    padding: 2px;
+    width: 80px;
+    background-color: #FF0000;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: 1px solid black;
+    font-size: 1em;
 }
 
 #Kback {
@@ -278,4 +291,20 @@ margin: 5px;
     padding: 8px;
     position: relative;
     left: 50px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+    border-radius: 50%;
+}
+
+.footeTxt{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.hold{
+    position: relative;
+    left: 100px;
+    margin: 10px;
 }
