@@ -291,6 +291,7 @@ button{
 }
 
 .back1{
+    cursor: pointer;
 position: absolute;
 top: 970px;
 left: 15px;
