@@ -113,18 +113,18 @@ margin: 5px;
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     position: relative;
-    top: 20px;
-    left: 60px;
+    top: 15px;
+    left: 80px;
 
     
 }
 
 .glasses{
-    width: 60px ;
-    height: 60px;
+    width: 50px ;
+    height: 50px;
     position: relative;
-    left: 200px;
-    bottom: 33px;
+    left: 220px;
+    bottom: 30px;
     stroke: #FF0000;
     stroke-width: 0.3em;
 }
@@ -261,12 +261,15 @@ button{
     top: 450px;
     width: 110px;
     background-color: #FF0000;
-    padding: 2 2 0 2;
+    padding: 2;
 }
 
 .WedHead{
     font-family: 'Playfair Display', serif;
     font-size:16;
+    position: relative;
+    top: 5px;
+    z-index: 1;
     text-align: center;
     color: white;
 }
@@ -275,7 +278,7 @@ button{
     width: 100vw;
     height: 5px;
     position: absolute;
-    top: 475px;
+    top: 480px;
     background-color: #FF0000;
 }
 .para{
@@ -290,16 +293,18 @@ button{
 .back1{
 position: absolute;
 top: 970px;
+left: 15px;
+border-radius: 50px;
+background-color: #FF0000;
+width: 80px;
+border: 1px solid black;
 }
 
-#backIcon{
-    stroke: #FF0000;
-    stroke-width: 2em;
-    width: 30px;
-    height: 30px;
-}
+
 .last{
     position: relative;
-    left: 40px;
-    bottom: 25px;
+    text-align: white;
+    left: 20px;
+    top: 2.5px;
+    color: white;
 }
