@@ -79,19 +79,21 @@ h2 {
     margin-left: 10px;
     color: white;
     position: relative;
-    top: 3px;
+    top: 2px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #sub{
     position: absolute;
     right: 10px;
-    bottom: 1px;
+    bottom: 0.5px;
     font-size: 17px;
     color: white;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 
-/* --------Opinion page-------- */
+/* --------OPINION PAGE-------- */
 
 .Kheading {
     font-family: 'Playfair Display', serif;
@@ -111,19 +113,21 @@ h2 {
     position: relative;
     top: 100px;
     background-color: rgb(243, 243, 243);
+    height: 210px;
 }
 
 .Ktitle {
     color: #FF0000;
     text-decoration: underline;
-    margin-left: 5px;
+    margin-left: 6px;
+    margin-top: 5px;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 .Ksubhead {
     font-family: 'Playfair Display', serif;
     color: black;
-    margin-left: 5px;
+    margin-left: 6px;
     font-size: 1.2em;
 }
 
@@ -133,23 +137,23 @@ h2 {
     word-spacing: 1px;
     color: black;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-left: 5px;
+    margin-left: 6px;
     
 }
 
 .Kauth {
     color: #999999ff;
     font-size: 10px;
-    line-height: 10px;
-    margin-left: 5px;
+    line-height: 7px;
+    margin-left: 6px;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 .pic {
     width: 150px;
-    height: 120px;
+    height: 100px;
     float: right;
-    margin-right: 5px;
+    margin-right: 6px;
     position: relative;
     bottom: 120px;
 }
@@ -290,7 +294,7 @@ h2 {
     height: 50px;
     padding: 8px;
     position: relative;
-    left: 50px;
+    left: 35px;
     stroke: #FF0000;
     stroke-width: 0.8em;
     border-radius: 50%;
@@ -305,6 +309,6 @@ h2 {
 
 .hold{
     position: relative;
-    left: 100px;
+    left: 90px;
     margin: 10px;
 }
