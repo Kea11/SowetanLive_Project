@@ -23,7 +23,7 @@ h2 {
 #navbar {
     position: absolute;
     top: 20px;
-    border-style: none;
+    max-width: 80px;
 }
 
 .user {
@@ -57,7 +57,14 @@ h2 {
     background-color:#FF0000;
     width: 360px;
     height: 30px;
+}
 
+#navdate{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    font-size: 17px;
+    position: relative;
+    top: 5px;
 }
 
 .bottomLine{
@@ -67,9 +74,12 @@ h2 {
 }
 
 #sub{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    font-size: 17px;
     position: absolute;
-    right: 10px;
-    top: -0.5px;
+    right: 15px;
+    top: 7px;
 
 }
 
@@ -81,26 +91,27 @@ h2 {
     border-radius: 50%;
     padding: 8px;
     position: relative;
-    left: 50px;
+    left: 35px;
 }
 .footer{
     background-color: lightgrey;
-    height: 230px;
+    height: 220px;
     position: absolute;
-    top: 1010px;
-    bottom: 0; 
+    top: 992px;
     padding: 20px;
 }
 
 .footeTxt{
-font-family: 'Merriweather Sans', sans-serif;
-text-align: center;
-margin: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
 }
 
 .hold{
     position: relative;
-    left: 100px;
+    left: 90px;
+    margin: 10px;
 }
 
 .Bstop{
@@ -111,27 +122,28 @@ margin: 5px;
 
 .Bsheading{
     font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
+    font-size: 2em;
     position: relative;
     top: 15px;
-    left: 80px;
+    left: 50px;
 
     
 }
 
 .glasses{
-    width: 50px ;
-    height: 50px;
+    width: 70px ;
+    height: 70px;
     position: relative;
-    left: 220px;
-    bottom: 30px;
+    left: 240px;
+    bottom: 45px;
     stroke: #FF0000;
     stroke-width: 0.3em;
 }
 
 .Pic1{
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
+    left: 8px;
 }
 
 .BsImg1{
@@ -162,7 +174,7 @@ margin: 5px;
 
 .BsImg2{
     position: absolute;
-   top: 220px;
+   top: 210px;
    left: 15px;
     
 }
@@ -188,7 +200,7 @@ margin: 5px;
 
 .BsImg3{
     position: absolute;
-    top: 440px;
+    top: 420px;
    left: 15px;
 }
 
@@ -214,7 +226,7 @@ margin: 5px;
 
 .load{
     position: absolute;
-  top: 720px;
+  top: 710px;
   left: 120px;
 }
 
@@ -230,7 +242,7 @@ button{
 
 .CallToAction{
     position: absolute;
-    top: 770px;
+    top: 760px;
     left: 10px;
     background-color: black;
     width: 340px;
@@ -293,7 +305,7 @@ button{
 .back1{
  cursor: pointer;
 position: absolute;
-top: 970px;
+top: 950px;
 left: 15px;
 border-radius: 50px;
 background-color: #FF0000;
