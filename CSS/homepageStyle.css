@@ -23,32 +23,6 @@ p{
     height: 80px;
 }
 
-
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    color:#FF0000;
-    padding: 60px 120px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0; 
-  }
-  
-  .topnav a:hover {
-    color: black;
-  }
- 
-
 #navbar {
     position: absolute;
     background-color: white;
@@ -273,16 +247,6 @@ margin: 5px;
     line-height: 17px;
 }
 
-/* .scrolling-wrapper{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.card{  
-    display: inline-block;
-} */
-
 .goodLife{
     border-style: groove;
     margin: 10px;
@@ -361,6 +325,7 @@ margin: 5px;
     left: 125px;
     line-height: 17px;
 }
+
 
 /* code for the popup */
 
