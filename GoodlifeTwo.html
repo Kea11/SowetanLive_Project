@@ -12,14 +12,53 @@
 </head>
 <body>
     <div class="header">
-        <div id="navbar">
-            <nav class="navbar navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </nav>
-        </div>
+           <!-- got this code from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ and modified it to suit our code-->
+           <nav id="bar" class="navbar navbar-light light-blue lighten-4">
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          
+              <!-- Links inside the navbar -->
+              <ul id="open" class="navbar-nav mr-auto">
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                  </form>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="index.html">Home </a>
+                    <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Breaking News</a>
+                  <br>
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Other News</a>
+                </li>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="goodlife.html">Good Life</a>
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeTwo.html">Weddings</a style="text-align: center;"><br>
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeThree.html">Travel</a><br>
+                <a style="text-align: center;" class='Gsubnav' href="GoodlifeFour.html">Health</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="opinion.html">Opinion</a>
+
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Osubnav' href="opinion2.html">Letters</a>
+                  <br>
+                    <a style="text-align: center;" class='Osubnav' href="opinion3.html">Articles</a>
+                    <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion4.html">Coloumnist</a>
+                  <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion5.html">Editorials</a>
+                </li>
+              </ul>
+              
+
+            </div>
+          </nav>
     
         <div class="log">
              <img src="assets/Images/logo.png" class="logo" alt="">
@@ -36,7 +75,7 @@
                     <div class="TopLine"></div>
                     <div class="datesec">
                         <h4 id="navdate">DATE</h4>
-                        <h4 id="sub">SUBSCRIBE|LOG IN</h4>
+                        <h4 id="sub">SUBSCRIBE | LOG IN</h4>
                     </div>
                     <div class="bottomLine"></div>
                 </div>
@@ -55,7 +94,7 @@
     <p class="para">Lorem ipsum dolor sit amet consectetur in adipisicing elit. Praesentium in non ipsum sit eos,sit officiis voluptatibus doloremque cum repellendus vitae dolores quidem vitae harum,cupiditate commodi? eos Fugiat magnam laborum labore facilis nobis!Lorem ipsum dolor sit amet consectetur in adipisicing elit. Praesentium in non ipsum sit eos, officiis voluptatibus doloremque cum repellendus sit vitae dolores quidem vitae harum,cupiditate commodi? eos Fugiat magnam laborum labore facilis nobis! <br> <br> Lorem ipsum dolor sit amet consectetur in adipisicing elit. Praesentium in non ipsum eos, officiis voluptatibus doloremque cum repellendus vitae dolores quidem vitae harum,cupiditate commodi? eos Fugiat magnam laborum labore facilis nobis!Lorem ipsum dolor sit amet consectetur in adipisicing elit. Praesentium in non ipsum eos, officiis voluptatibus doloremque cum repellendus vitae dolores quidem vitae harum,cupiditate commodi? eos Fugiat!</p>
 
     <div class="back1">
-<h6 class="last"><u><strong>Back</strong></u></h6>
+        <a style="color: white;" href="goodlife.html" class="last"><strong>Back</strong></a>
     </div>
 </div>
 
