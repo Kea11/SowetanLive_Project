@@ -1,0 +1,340 @@
+*{  box-sizing: border-box;
+    margin:0;
+}
+
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.logo{
+    position: absolute;
+    background-color: white;
+    left: 82px;
+    top: 15px;
+    width: 200px;
+    height: 80px;
+}
+
+#navbar {
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    border-style: none;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    right:20px;
+    top: 35px;
+    fill: #252525;
+}
+
+.header{
+    position: fixed;
+    height: 100px;
+    background-color: white;
+    z-index: 2;
+    top: 0;
+}
+
+.redSec{
+    position: relative;
+    top:100px;
+}
+
+.TopLine{
+    width: 360px;
+    height: 1.5px;
+    background-color: #252525;
+}
+
+.date{
+    font-size: 1em;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+.datesec{
+    z-index: -1;
+    background-color:#FF0000;
+    width: 360px;
+    height: 30px;
+    color: white;
+    font-size: 1em;
+}
+
+.bottomLine{
+    width: 360px;
+    height: 1.5px;
+    background-color: #252525;
+}
+
+#sub{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: white;
+    font-size: 1em;
+
+}
+
+.headingOne{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    position:absolute;
+    left: 25px;
+    top: 138px;
+    text-transform: uppercase;
+}
+
+.newspaper{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    right: 30px;
+    top: 144px;
+    stroke: #FF0000;
+    stroke-width: 0.4em;
+}
+
+.otherImage{
+    width: 360px;
+    height: 200px;
+    position:absolute;
+    top: 183px;
+}
+
+.figure-caption{
+    position:absolute;
+    top: 380px;
+}
+
+.subheadingOne{
+    font-family: 'Playfair Display', serif;
+    position:absolute;
+    top: 420px; 
+    left: 55px;
+    font-size: 1.2em;
+
+}
+.para{
+    position:absolute;
+    padding: 10px;
+    top: 450px; 
+    text-align: justify; 
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
+
+}
+
+.otherImageCor{
+    width: 360px;
+    height: 200px;
+    position:absolute;
+    top: 550px;
+}
+
+.figure-captionTwo{
+    position:absolute;
+    top: 750px;
+}
+
+.subheadingTwo{
+    font-family: 'Playfair Display', serif;
+    position:absolute;
+    top: 790px; 
+    left: 30px;
+    font-size: 1.2em;
+
+}
+.paraTwo{
+    position:absolute;
+    padding: 10px;
+    top: 820px; 
+    text-align: justify; 
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
+}
+
+.firstDivider{
+    width: 330px;
+    height: 1px;
+    background-color: #252525;
+    position: absolute;
+    top: 527px;
+    left: 15px;
+}
+
+.secondDivider{
+    width: 330px;
+    height: 1px;
+    background-color: #252525;
+    position: absolute;
+    top: 897px;
+    left: 15px;
+}
+
+.subheadingSmall{
+    font-family: 'Playfair Display', serif;
+    position:absolute;
+    top: 920px; 
+    left: 30px;
+    font-size: 1.2em 
+}
+
+.joburgImage{
+    width: 160px;
+    height: 100px;
+    position:absolute;
+    top: 925px;
+    right: 20px;
+}
+
+.figure-captionThree{
+    position:absolute;
+    top: 1023px;
+    right: 20px;
+}
+
+.paraThree{
+    position:absolute;
+    padding: 10px;
+    top: 1050px; 
+    text-align: justify; 
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
+}
+
+.thirdDivider{
+    width: 330px;
+    height: 1px;
+    background-color: #252525;
+    position: absolute;
+    top: 1130px;
+    left: 15px;
+}
+
+.subheadingSmallTwo{
+    font-family: 'Playfair Display', serif;
+    position:absolute;
+    top: 1150px; 
+    left: 30px;
+    font-size: 1.2em 
+}
+
+.codingImage{
+    width: 160px;
+    height: 100px;
+    position:absolute;
+    top: 1157px;
+    right: 20px;
+}
+
+.figure-captionFour{
+    position:absolute;
+    top: 1255px;
+    right: 20px;
+}
+
+.paraFour{
+    position:absolute;
+    padding: 10px;
+    top: 1282px; 
+    text-align: justify; 
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
+}
+
+.fourthDivider{
+    width: 330px;
+    height: 1px;
+    background-color: #252525;
+    position: absolute;
+    top: 1360px;
+    left: 15px;
+}
+
+.subheadingSmallThree{
+    font-family: 'Playfair Display', serif;
+    position:absolute;
+    top: 1379px; 
+    left: 30px;
+    font-size: 1.2em 
+}
+
+.domesticLaw{
+    width: 160px;
+    height: 100px;
+    position:absolute;
+    top: 1385px;
+    right: 20px;
+}
+
+.figure-captionFive{
+    position:absolute;
+    top: 1480px;
+    right: 20px;
+}
+
+.paraFive{
+    position:absolute;
+    padding: 10px;
+    top: 1505px; 
+    text-align: justify; 
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 17px;
+}
+
+.fifthDivider{
+    width: 330px;
+    height: 1px;
+    background-color: #252525;
+    position: absolute;
+    top: 1588px;
+    left: 15px;
+}
+
+
+.icon{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    position: relative;
+    left: 31px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+    border-radius: 50%;
+    fill: #252525;
+}
+.footer{
+    background-color: #eeeeee;
+    position: absolute;
+    top: 1615px;
+    bottom: 0;
+    height: 220px;
+    padding: 20px;
+}
+
+.footeTxt{
+font-family: 'Merriweather Sans', sans-serif;
+text-align: center;
+margin: 5px;
+font-size: 12px;
+}
+
+.hold{
+    position: relative;
+    left: 100px;
+    top: 12px;
+}

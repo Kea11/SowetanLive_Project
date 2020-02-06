@@ -23,12 +23,86 @@ p{
     height: 80px;
 }
 
-#navbar {
-    position: absolute;
-    background-color: white;
-    top: 20px;
-    border-style: none;
+#main{
+    width: 100%;
+    height: 100%;
 }
+
+/* modified this code however got it off w3Schools */
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #252525;
+    font-size: 16px;
+    background-color: #FF0000;
+    color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  ::placeholder{
+      color: white;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+/* w3Schools code */
+
+#open{
+    padding: 20 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    position: relative;
+    left: -16px;
+    top: 20px;
+    width: 100vw;
+    height: 100vh;
+    text-align: justify;
+}
+
+.Hsubnav{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+position: relative;
+left: 120px;
+}
+
+.Gsubnav{
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+    position: relative;
+    left: 145px;
+}
+
+.Osubnav{
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+    position: relative;
+    left: 145px;
+}
+
+.Hsubnav:hover{
+    color: #FF0000;
+}
+.Gsubnav:hover{
+    color: #FF0000;
+}
+.Osubnav:hover{
+    color: #FF0000;
+}
+
+.navbar {
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    max-width: 80px;
+}
+
 
 .user {
     width: 30px;
@@ -37,6 +111,7 @@ p{
     background-color: white;
     right:20px;
     top: 35px;
+    fill: #252525;
 }
 
 .header{
@@ -96,13 +171,15 @@ p{
     left: 31px;
     stroke: #FF0000;
     stroke-width: 0.8em;
+    border-radius: 50%;
+    fill: #252525;
 }
 .footer{
-    background-color: lightgrey;
+    background-color: #eeeeee;
     position: absolute;
     top: 1340px;
     bottom: 0;
-    height: 230px;
+    height: 220px;
     padding: 20px;
 }
 
@@ -110,11 +187,13 @@ p{
 font-family: 'Merriweather Sans', sans-serif;
 text-align: center;
 margin: 5px;
+font-size: 12px;
 }
 
 .hold{
     position: relative;
     left: 100px;
+    top: 12px;
 }
 
 .heading{
@@ -123,7 +202,6 @@ margin: 5px;
     position:absolute;
     left: 25px;
     top: 138px;
-    /* top: 143px; */
     text-transform: uppercase;
 }
 
@@ -168,13 +246,6 @@ margin: 5px;
 
 }
 
-/* {
-    position: absolute;
-    top: 672px;
-    left: 10px;
-   
-} */
-
 .w3-button{
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
@@ -185,7 +256,7 @@ margin: 5px;
     left: 10px;
     width: 340px;
     height: 70px;
-    background-color: black;
+    background-color:#252525;
     color: white;
    
 }
@@ -253,7 +324,7 @@ margin: 5px;
     height: 100px;
     position: absolute;
     top: 1100px;
-    background-color: lightgray;
+    background-color: #eeeeee;
     width: 340px;
 }
 
@@ -293,7 +364,7 @@ margin: 5px;
     height: 100px;
     position: absolute;
     top: 1200px;
-    background-color: lightgray;
+    background-color: #eeeeee;
     width: 340px;
 }
 
