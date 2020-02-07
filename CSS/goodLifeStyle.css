@@ -50,7 +50,7 @@ input[type=text] {
     width: 100vw;
     height: 100vh;
     text-align: justify;
-    
+    animation: slide 1s ease-in forwards;
 }
 
 .Hsubnav{
@@ -396,3 +396,7 @@ border: 1px solid black;
 }
 
 /*@keyFrames*/
+@keyframes slide {
+    from {transform: scale(0);}
+    to {transform: scaleZ(7);}
+}
