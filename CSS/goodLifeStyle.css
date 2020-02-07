@@ -50,6 +50,7 @@ input[type=text] {
     width: 100vw;
     height: 100vh;
     text-align: justify;
+    
 }
 
 .Hsubnav{
@@ -108,9 +109,14 @@ font-family: 'Merriweather Sans', sans-serif;
     z-index: 2;
 }
 
-.redSec{
+.MainredSec{
     position: relative;
     top:100px;
+}
+
+.redSec{
+    position: relative;
+    top: 40px;
 }
 
 .TopLine{
@@ -388,3 +394,5 @@ border: 1px solid black;
     bottom: 0.5px;
     color: white;
 }
+
+/*@keyFrames*/
