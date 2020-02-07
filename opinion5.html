@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description=" content="Discover the viewers opinion Editorials on SowetanLIVE News and share yours.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -8,21 +9,59 @@
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Playfair+Display:700&display=swap" rel="stylesheet">
 
-    <title>Editorial</title>
+    <title>Editorials - Opinion Page_SowetanLIVE</title>
 </head>
 <body>
 
     <div class="header">
-        <div id="navbar">
-            <nav class="navbar navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </nav>
-        </div>
+          <!-- got this code from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ and modified it to suit our code-->
+          <nav id="bar" class="navbar navbar-light light-blue lighten-4">
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          
+              <!-- Links inside the navbar -->
+              <ul id="open" class="navbar-nav mr-auto">
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                  </form>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="index.html">Home </a>
+                    <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Breaking News</a>
+                  <br>
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Other News</a>
+                </li>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="goodlife.html">Good Life</a>
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeTwo.html">Weddings</a style="text-align: center;"><br>
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeThree.html">Travel</a><br>
+                <a style="text-align: center;" class='Gsubnav' href="GoodlifeFour.html">Health</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="opinion.html">Opinion</a>
+
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Osubnav' href="opinion2.html">Letters</a>
+                  <br>
+                    <a style="text-align: center;" class='Osubnav' href="opinion3.html">Articles</a>
+                    <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion4.html">Coloumnist</a>
+                  <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion5.html">Editorials</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     
         <div class="log">
-             <img src="assets/Images/logo.png" class="logo" alt="">
+          <a href="index.html"><img src="assets/Images/logo.png" class="logo" alt=""></a>
         </div>
              
         <div class="user"><?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +74,7 @@
         <div class="redSec">
             <div class="TopLine"></div>
             <div class="datesec">
-                <h4>DATE</h4>
+                <h4 id="navdate">DATE</h4>
                 <h4 id="sub">SUBSCRIBE|LOG IN</h4>
             </div>
             <div class="bottomLine"></div>
@@ -56,13 +95,15 @@
     </div>
 
     <a href="opinion.html">
-    <div id="allBack">
-    <?xml version="1.0" encoding="UTF-8"?>
+    <div>
+    <!-- <?xml version="1.0" encoding="UTF-8"?>
     <svg class="returnIcon" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 	
         <path d="m511.56 434.26c-1.728-142.33-124.42-258.24-277.09-263.42v-74.841c0-17.645-14.342-31.999-31.974-31.999-7.931 0-15.591 3.042-21.524 8.562 0 0-134.83 124.83-173.61 163.76-4.746 4.792-7.369 11.771-7.369 19.677s2.623 14.885 7.369 19.687c38.781 38.915 173.61 163.74 173.61 163.74 5.933 5.521 13.593 8.562 21.524 8.562 17.631 0 31.974-14.354 31.974-31.999v-74.591c153.48 2.156 255.79 50.603 255.79 95.924 0 5.896 4.767 10.666 10.658 10.666 0.167 0.021 0.333 0.01 0.416 0 5.891 0 10.658-4.771 10.658-10.666 0-1.063-0.146-2.094-0.437-3.063z"/></svg>
-        <h6 id="Kback">Back</h6>
-    </div></a>
+        <h6 id="Kback">Back</h6> -->
+    </div>
+    <button id="return" type="submit">Back</button>
+</a>
 
 
 
@@ -113,7 +154,9 @@
    </div>
    
    <div class="text">
-       <p class="footeTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur distinctio consectetur minima atque nam aut placeat, ullam autem.</p>
+       <p class="footeTxt">SowetanLIVE <br>
+        © 2020 Arena Holdings (Pty) Ltd. All rights reserved.
+        Use of this site constitutes acceptance of our terms & conditions and privacy policy.</p>
    </div>
    
    <img class="hold" src="assets/Images/Arena-Holdings-logo-email.jpeg" width="40%">

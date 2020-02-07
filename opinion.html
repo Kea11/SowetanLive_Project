@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description=" content="Discover the viewers opinions, articles, editorials and coloumns.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,21 +18,60 @@
 
 
     <div class="header">
-        <div id="navbar">
-            <nav class="navbar navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </nav>
-        </div>
+        <!-- got this code from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ and modified it to suit our code-->
+        <nav id="bar" class="navbar navbar-light light-blue lighten-4">
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          
+              <!-- Links inside the navbar -->
+              <ul id="open" class="navbar-nav mr-auto">
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                  </form>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="index.html">Home </a>
+                    <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Breaking News</a>
+                  <br>
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Other News</a>
+                </li>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="goodlife.html">Good Life</a>
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeTwo.html">Weddings</a style="text-align: center;"><br>
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeThree.html">Travel</a><br>
+                <a style="text-align: center;" class='Gsubnav' href="GoodlifeFour.html">Health</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="opinion.html">Opinion</a>
+
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Osubnav' href="opinion2.html">Letters</a>
+                  <br>
+                    <a style="text-align: center;" class='Osubnav' href="opinion3.html">Articles</a>
+                    <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion4.html">Coloumnist</a>
+                  <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion5.html">Editorials</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     
 
         <!-- SOWETAN LIVE LOGO -->
         <div class="log">
-             <img src="assets/Images/logo.png" class="logo" alt="">
+             <a href="index.html"><img src="assets/Images/logo.png" class="logo" alt=""></a>
         </div>
              
         <!-- USER ICON -->
+        
         <div class="user"><?xml version="1.0" encoding="UTF-8"?>
             <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="m210.35 246.63c33.883 0 63.223-12.152 87.195-36.129 23.973-23.973 36.125-53.305 36.125-87.191 0-33.875-12.152-63.211-36.129-87.191-23.977-23.969-53.312-36.121-87.191-36.121-33.887 0-63.219 12.152-87.191 36.125s-36.129 53.309-36.129 87.188c0 33.887 12.156 63.223 36.133 87.195 23.977 23.969 53.312 36.125 87.188 36.125z"/>
@@ -132,9 +172,9 @@
             <h2 class="YourSay">Have Your Say</h2>
         
             <form class="form" action="">
-                <label for="name">NAME:<input type="text" placeholder="Type your name here" id="name"></label>
-                <label for="name">ARTICLE:<input type="text" placeholder="Name of article" id="article"></label>
-                <label for="name">COMMENT:<textarea name="message" id="comment" cols="20" rows="5" placeholder="Add comment here"></textarea></label>
+                <label for="name">NAME:<input style="background-color: white;" type="text" placeholder="Type your name here" id="name"></label>
+                <label for="articleName">ARTICLE:<input style="background-color: white;" type="text" placeholder="Name of article" id="article"></label>
+                <label for="comment">COMMENT:<textarea name="message" id="comment" cols="20" rows="5" placeholder="Add comment here"></textarea></label>
             </form>
         
             <button id="submit" type="submit">SUBMIT</button>
@@ -148,7 +188,7 @@
     <div class="footer">
      <div class="media">
          <!-- Facebook icon -->
-    <?xml version="1.0" encoding="UTF-8"?>
+    <a href="https://www.facebook.com/sowetanlive/"><?xml version="1.0" encoding="UTF-8"?>
     <svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
     <path d="m297.28 508.67c-2.1328 0.34766-4.2734 0.66797-6.4219 0.96094 2.1484-0.29297 4.2891-0.61328 6.4219-0.96094z"/>
     <path d="m302.4 507.79c-1.0195 0.1875-2.0391 0.35938-3.0586 0.53516 1.0195-0.17578 2.0391-0.34766 3.0586-0.53516z"/>
@@ -162,13 +202,13 @@
     <path d="m512 256c0-141.36-114.64-256-256-256s-256 114.64-256 256 114.64 256 256 256c1.5039 0 3-0.03125 4.5-0.058594v-199.29h-55v-64.098h55v-47.168c0-54.703 33.395-84.477 82.191-84.477 23.367 0 43.453 1.7422 49.309 2.5195v57.172h-33.648c-26.547 0-31.688 12.617-31.688 31.129v40.824h63.477l-8.2734 64.098h-55.203v189.45c107-30.676 185.34-129.26 185.34-246.11z"/>
     <path d="m272.91 511.43c-2.6641 0.17187-5.3398 0.30859-8.0234 0.39844 2.6836-0.089844 5.3594-0.22656 8.0234-0.39844z"/>
     <path d="m264.75 511.84c-1.4141 0.046874-2.832 0.082031-4.25 0.10547 1.418-0.023437 2.8359-0.058594 4.25-0.10547z"/>
-    </svg>
+    </svg></a>
 
     <!-- Twitter icon -->
-    <?xml version="1.0" encoding="UTF-8"?>
+    <a href="https://twitter.com/SowetanLIVE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><?xml version="1.0" encoding="UTF-8"?>
 <svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 <path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm116.89 199.6c0.11328 2.5195 0.16797 5.0508 0.16797 7.5938 0 77.645-59.102 167.18-167.18 167.18h0.003906-0.003906c-33.184 0-64.062-9.7266-90.066-26.395 4.5977 0.54297 9.2773 0.8125 14.016 0.8125 27.531 0 52.867-9.3906 72.98-25.152-25.723-0.47656-47.41-17.465-54.895-40.812 3.582 0.6875 7.2656 1.0625 11.043 1.0625 5.3633 0 10.559-0.72266 15.496-2.0703-26.887-5.3828-47.141-29.145-47.141-57.598 0-0.26562 0-0.50391 0.007812-0.75 7.918 4.4023 16.973 7.0508 26.613 7.3477-15.777-10.527-26.148-28.523-26.148-48.91 0-10.766 2.9102-20.852 7.957-29.535 28.977 35.555 72.281 58.938 121.12 61.395-1.0078-4.3047-1.5273-8.7891-1.5273-13.398 0-32.438 26.316-58.754 58.766-58.754 16.902 0 32.168 7.1445 42.891 18.566 13.387-2.6406 25.957-7.5312 37.312-14.262-4.3945 13.715-13.707 25.223-25.84 32.5 11.887-1.4219 23.215-4.5742 33.742-9.2539-7.8633 11.785-17.836 22.137-29.309 30.43z"/>
-</svg>
+</svg></a>
 
 <!-- LinkedIn icon -->
 <?xml version="1.0" encoding="UTF-8"?>
@@ -177,12 +217,12 @@
 </svg>
 
 <!-- Instagram icon -->
-<?xml version="1.0" encoding="UTF-8"?>
+<a href="https://www.instagram.com/sowetan_live/?hl=en"><?xml version="1.0" encoding="UTF-8"?>
 <svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 <path d="m305 256c0 27.062-21.938 49-49 49s-49-21.938-49-49 21.938-49 49-49 49 21.938 49 49z"/>
 <path d="m370.59 169.3c-2.3555-6.3828-6.1133-12.16-10.996-16.902-4.7422-4.8828-10.516-8.6406-16.902-10.996-5.1797-2.0117-12.961-4.4062-27.293-5.0586-15.504-0.70703-20.152-0.85938-59.402-0.85938-39.254 0-43.902 0.14844-59.402 0.85547-14.332 0.65625-22.117 3.0508-27.293 5.0625-6.3867 2.3555-12.164 6.1133-16.902 10.996-4.8828 4.7422-8.6406 10.516-11 16.902-2.0117 5.1797-4.4062 12.965-5.0586 27.297-0.70703 15.5-0.85938 20.148-0.85938 59.402 0 39.25 0.15234 43.898 0.85938 59.402 0.65234 14.332 3.0469 22.113 5.0586 27.293 2.3594 6.3867 6.1133 12.16 10.996 16.902 4.7422 4.8828 10.516 8.6406 16.902 10.996 5.1797 2.0156 12.965 4.4102 27.297 5.0625 15.5 0.70703 20.145 0.85547 59.398 0.85547 39.258 0 43.906-0.14844 59.402-0.85547 14.332-0.65234 22.117-3.0469 27.297-5.0625 12.82-4.9453 22.953-15.078 27.898-27.898 2.0117-5.1797 4.4062-12.961 5.0625-27.293 0.70703-15.504 0.85547-20.152 0.85547-59.402 0-39.254-0.14844-43.902-0.85547-59.402-0.65234-14.332-3.0469-22.117-5.0625-27.297zm-114.59 162.18c-41.691 0-75.488-33.793-75.488-75.484s33.797-75.484 75.488-75.484c41.688 0 75.484 33.793 75.484 75.484s-33.797 75.484-75.484 75.484zm78.469-136.31c-9.7422 0-17.641-7.8984-17.641-17.641s7.8984-17.641 17.641-17.641 17.641 7.8984 17.641 17.641c-0.003906 9.7422-7.8984 17.641-17.641 17.641z"/>
 <path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm146.11 316.61c-0.71094 15.648-3.1992 26.332-6.832 35.684-7.6367 19.746-23.246 35.355-42.992 42.992-9.3477 3.6328-20.035 6.1172-35.68 6.832-15.676 0.71484-20.684 0.88672-60.605 0.88672-39.926 0-44.93-0.17188-60.609-0.88672-15.645-0.71484-26.332-3.1992-35.68-6.832-9.8125-3.6914-18.695-9.4766-26.039-16.957-7.4766-7.3398-13.262-16.227-16.953-26.035-3.6328-9.3477-6.1211-20.035-6.832-35.68-0.72266-15.68-0.89062-20.688-0.89062-60.609s0.16797-44.93 0.88672-60.605c0.71094-15.648 3.1953-26.332 6.8281-35.684 3.6914-9.8086 9.4805-18.695 16.961-26.035 7.3398-7.4805 16.227-13.266 26.035-16.957 9.3516-3.6328 20.035-6.1172 35.684-6.832 15.676-0.71484 20.684-0.88672 60.605-0.88672s44.93 0.17188 60.605 0.89062c15.648 0.71094 26.332 3.1953 35.684 6.8242 9.8086 3.6914 18.695 9.4805 26.039 16.961 7.4766 7.3438 13.266 16.227 16.953 26.035 3.6367 9.3516 6.1211 20.035 6.8359 35.684 0.71484 15.676 0.88281 20.684 0.88281 60.605s-0.16797 44.93-0.88672 60.605z"/>
-</svg>
+</svg></a>
 <div class="w-300"></div>
 
 <!-- WhatsApp icon -->
@@ -193,7 +233,9 @@
 </div>
 
 <div class="text">
-    <p class="footeTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur distinctio consectetur minima atque nam aut placeat, ullam autem.</p>
+    <p class="footeTxt">SowetanLIVE <br>
+        © 2020 Arena Holdings (Pty) Ltd. All rights reserved.
+        Use of this site constitutes acceptance of our terms & conditions and privacy policy.</p>
 </div>
 
 <img class="hold" src="assets/Images/Arena-Holdings-logo-email.jpeg" width="40%">

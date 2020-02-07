@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* --------THE HEADER SECTION-------- */
+.logo{
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    width: 200px;
+    height: 80px;
+}
+
+#navbar {
+    position: absolute;
+    top: 20px;
+    border-style: none;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 35px;
+}
+
+.header{
+    top: 0;
+    position: fixed;
+    height: 100px;
+    z-index: 100;
+    background: white;
+    width: 100vw;
+}
+
+.redSec{
+    position: relative;
+    top:100px;
+}
+
+.TopLine{
+    width: 360px;
+    height: 1.5px;
+    background-color: #252525;
+}
+
+.datesec{
+    z-index: -1;
+    background-color:#FF0000;
+    width: 360px;
+    height: 30px;
+
+}
+
+.bottomLine{
+    width: 360px;
+    height: 1.5px;
+    background-color: #252525;
+}
+
+#navdate {
+    font-size: 17px;
+    margin-left: 10px;
+    color: white;
+    position: relative;
+    top: 2px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#sub{
+    position: absolute;
+    right: 10px;
+    bottom: 0.5px;
+    font-size: 17px;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+
+/* SUBSCRIBE & LOG IN */
+
+.close {
+    position: relative;
+    top: 30px;
+    right: 30px;
+    font-size: 1.5em;
+}
+
+.subscribe {
+    position: relative;
+    top: 200px;
+    color: #252525;
+}
+
+.login {
+    position: relative;
+    top: 200px;
+    color: #252525;
+}
+
+
+
+/* -------THE FOOTER-------- */
+.footer{
+    background-color: #eeeeee;
+    position: absolute;
+    top: 420px;
+    bottom: 0;
+    height: 220px;
+    padding: 20px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    position: relative;
+    left: 35px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+    border-radius: 50%;
+    /* fill: #252525; */
+}
+
+.footeTxt{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.hold{
+    position: relative;
+    left: 90px;
+    margin: 10px;
+}

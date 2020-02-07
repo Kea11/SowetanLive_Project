@@ -16,6 +16,7 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+
 /* --------THE HEADER SECTION-------- */
 .logo{
     position: absolute;
@@ -25,11 +26,79 @@ h2 {
     height: 80px;
 }
 
-#navbar {
+/* modified this code however got it off w3Schools */
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #252525;
+    font-size: 16px;
+    background-color: #FF0000;
+    padding: 12px 20px 12px 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  #bar ::placeholder{
+      color: white;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+/* w3Schools code */
+#open{
+    padding: 20 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    position: relative;
+    left: -16px;
+    top: 20px;
+    width: 100vw;
+    height: 100vh;
+    text-align: justify;
+}
+
+.Hsubnav{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+position: relative;
+left: 120px;
+}
+
+.Gsubnav{
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+    position: relative;
+    left: 145px;
+}
+
+.Osubnav{
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+    position: relative;
+    left: 145px;
+}
+
+.Hsubnav:hover{
+    color: #FF0000;
+}
+.Gsubnav:hover{
+    color: #FF0000;
+}
+.Osubnav:hover{
+    color: #FF0000;
+}
+
+.navbar {
+    z-index: 3;
     position: absolute;
     top: 20px;
-    border-style: none;
+    max-width: 80px;
 }
+
 
 .user {
     width: 30px;
@@ -77,37 +146,22 @@ h2 {
     font-size: 17px;
     margin-left: 10px;
     color: white;
+    position: relative;
+    top: 2px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #sub{
     position: absolute;
     right: 10px;
-    top: -0.5px;
+    bottom: 0.5px;
     font-size: 17px;
     color: white;
-}
-
-.icon{
-    width: 50px;
-    height: 50px;
-    padding: 8px;
-    position: relative;
-    left: 50px;
-}
-
-.footeTxt{
-font-family: 'Merriweather Sans', sans-serif;
-text-align: center;
-margin: 5px;
-}
-
-.hold{
-    position: relative;
-    left: 100px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 
-/* --------Opinion page-------- */
+/* --------OPINION PAGE-------- */
 
 .Kheading {
     font-family: 'Playfair Display', serif;
@@ -126,37 +180,51 @@ margin: 5px;
     border-style: groove;
     position: relative;
     top: 100px;
-    background-color: rgb(243, 243, 243);
+    background-color: #eeeeee;
+    height: 210px;
 }
 
 .Ktitle {
     color: #FF0000;
     text-decoration: underline;
+    margin-left: 6px;
+    margin-top: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .Ksubhead {
     font-family: 'Playfair Display', serif;
     color: black;
+    margin-left: 6px;
+    font-size: 1.2em;
 }
 
 .para {
     text-align: initial;
     width: 50%;
     word-spacing: 1px;
-    color: black;
+    color: #252525;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-left: 6px;    
+}
+
+a:active {
+    text-decoration: none;
 }
 
 .Kauth {
     color: #999999ff;
-    font-size: 12px;
-    line-height: 10px;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 6px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .pic {
     width: 150px;
-    height: 120px;
+    height: 100px;
     float: right;
-    margin-right: 10px;
+    margin-right: 6px;
     position: relative;
     bottom: 120px;
 }
@@ -165,27 +233,34 @@ margin: 5px;
 /* -------ADDING YOUR COMMENT SECTION-------- */
 .YourSay {
     position: relative;
-    top: 60px;
+    top: 70px;
+    left: 15px;
     display: inline-block;
-    margin-left: 60px;    
+    margin-left: 60px; 
+    font-family: 'Playfair Display', serif;   
 }
 
 .form {
     position: relative;
-    top: 80px;
+    top: 90px;
     margin-left: 10px;
 }
 
 #name {
+    color: black;
     width: 235px;
+    max-height: 30px;
     position: relative;
     left: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #article {
     width: 235px;
+    max-height: 30px;
     position: relative;
     left: 37px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #comment {
@@ -193,19 +268,21 @@ margin: 5px;
     position: relative;
     left: 17px;
     height: 100px;
+    border: 1px solid black;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #submit {
     position: relative;
     left: 260px;
-    top: 80px;
+    top: 90px;
     border-radius: 50px;
     padding: 2px;
     width: 80px;
     background-color: #FF0000;
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
-    border: 1px solid black;
+    border: 1px solid #252525;
     font-size: 1em;
 }
 
@@ -248,17 +325,22 @@ margin: 5px;
     text-align: justify;
 }
 
-#allBack {
-    color: black;
-}
-
-.returnIcon {
-    width: 10%;
+#return {
+    width: 80px;
     margin-left: 10px;
     position: relative;
     top: 320px;
     stroke: #FF0000;
     stroke-width: 0.8em;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 2px;
+    width: 80px;
+    background-color: #FF0000;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: 1px solid black;
+    font-size: 1em;
 }
 
 #Kback {
@@ -269,12 +351,38 @@ margin: 5px;
 }
 
 
+
 /* -------THE FOOTER-------- */
 .footer{
-    background-color: lightgrey;
+    background-color: #eeeeee;
     position: absolute;
     top: 1470px;
     bottom: 0;
     height: 220px;
     padding: 20px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    position: relative;
+    left: 35px;
+    stroke: #FF0000;
+    stroke-width: 0.8em;
+    border-radius: 50%;
+    /* fill: #252525; */
+}
+
+.footeTxt{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.hold{
+    position: relative;
+    left: 90px;
+    margin: 10px;
 }
