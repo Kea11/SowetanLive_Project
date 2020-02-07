@@ -24,6 +24,7 @@ h2 {
     top: 15px;
     width: 200px;
     height: 80px;
+    z-index: 1;
 }
 
 #navbar {
@@ -92,6 +93,24 @@ h2 {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+.drop {
+    background-color: white;
+    /* height: 100px; */
+    width: 360px;
+    height: 570px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    animation: slide 1s ease-in forwards;
+    z-index: 1000;
+}
+
+@keyframes slide {
+    from {transform: scale(0);}
+    to {transform: scaleZ(7);}
+}
 
 
 /* SUBSCRIBE & LOG IN */

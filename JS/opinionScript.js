@@ -1,17 +1,13 @@
-// const firstPg = document.querySelector('.op1');
-// const secondPg = document.querySelector('.op2');
-// const clicked = document.getElementById('letpic');
-
-// clicked.addEventListener('click', () => {
-//     window.location.href = "clickedPg.html";
-// });
-
+// This is the click event for the user icon on the far right
 
 const subLog = document.querySelector('.user');
 
 subLog.addEventListener('click', () => {
     window.location.href = 'SubscribePg.html';
 });
+
+
+
 
 
 const pressed = document.getElementById('bar');
@@ -22,3 +18,12 @@ pressed.addEventListener('click',()=>{
 });
 
 
+
+const nav = document.querySelector('.navbar');
+const test = document.querySelector('.drop');
+
+test.style.display = 'none';
+
+nav.addEventListener('click', () => {
+    test.style.display = 'block';
+});
