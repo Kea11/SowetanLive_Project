@@ -1,8 +1,17 @@
-const pressed = document.getElementById('bar');
-const opened = document.getElementById('open');
+const pressed = document.querySelector('.navbar');
+const opened = document.getElementById('bar');
+const close = document.querySelector('.close');
+
 
 pressed.addEventListener('click',()=>{
    opened.style.backgroundColor = 'white';
+   opened.style.display = 'block';
+   close.style.display = 'block';
+   pressed.style.display = 'none';
+});
+
+close.goBack('click',()=> {
+window.history.back();
 });
 
 const back = document.querySelector('.back1');
