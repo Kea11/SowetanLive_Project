@@ -14,7 +14,7 @@ h2 {
 
 .logo{
     position: absolute;
-    
+    top: 0;
     width: 140px;
     height: 60px;
 }
@@ -25,7 +25,7 @@ input[type=text] {
     box-sizing: border-box;
     border: 1px solid #252525;
     font-size: 16px;
-    background-color: #FF0000;
+    background-color: #de2f20;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -45,9 +45,10 @@ input[type=text] {
 
 .close{
     position: absolute;
-    left: 40px;
-    top: 40px;
+   right: 30px;
+   top: 10px;
     font-size: 1.5em;
+    z-index: 5;
 }
 
 #open{
@@ -89,24 +90,31 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .Hsubnav:hover{
-    color: #FF0000;
+    color: #de2f20;
 }
 .Gsubnav:hover{
-    color: #FF0000;
+    color: #de2f20;
 }
 .Osubnav:hover{
-    color: #FF0000;
+    color: c;
 }
 
 .navbar {
     color: black;
     position: absolute;
-    top: 20px; 
     right: 5px;
     top: 5px;
     max-width: 55px;
     height: 50px;
 } 
+
+#navbar{
+    position: absolute;
+  left: 315px;
+  top: 18px;
+  width: 30px;
+    height: 25px;
+}
 
 #search{
     fill: white;
@@ -132,9 +140,6 @@ font-family: 'Merriweather Sans', sans-serif;
 
 
 
-
-
-
 #sub{
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
@@ -148,18 +153,16 @@ font-family: 'Merriweather Sans', sans-serif;
 .icon{
     width: 50px;
     height: 50px;
-    stroke: #FF0000;
-    stroke-width: 0.8em;
     border-radius: 50%;
     padding: 8px;
     position: relative;
     left: 35px;
 }
 .footer{
-    background-color: #eeeeee;
+   background-color: white;
     height: 220px;
     position: absolute;
-    top: 992px;
+    top: 980px;
     padding: 20px;
 }
 
@@ -178,7 +181,7 @@ font-family: 'Merriweather Sans', sans-serif;
 
 .Bstop{
     position: absolute;
-    top: 140px;
+    top: 60px;
 }
 
 
@@ -187,9 +190,7 @@ font-family: 'Merriweather Sans', sans-serif;
     font-size: 2em;
     position: relative;
     top: 15px;
-    left: 50px;
-
-    
+    left: 50px; 
 }
 
 .glasses{
@@ -198,8 +199,6 @@ font-family: 'Merriweather Sans', sans-serif;
     position: relative;
     left: 240px;
     bottom: 45px;
-    stroke: #FF0000;
-    stroke-width: 0.3em;
 }
 
 .Pic1{
@@ -213,25 +212,14 @@ font-family: 'Merriweather Sans', sans-serif;
     left: 15px;
 }
 
-.BsinsideWed{
-    width: 200px;
-    height: 90px;
-    background-color: #252525;
-    opacity: 0.5;
-    position: absolute;
-    left: 80px;
-    top: 50px;
-    
-}
-
 .BssubWed{
     font-family: 'Playfair Display', serif;
-    font-size:1.2em;
+    font-size:1.5em;
     color: white;
     text-align: center;
     position: absolute;
-    top: 30px;
-    left: 50px;
+    top: 120px;
+    left: 20px;
 }
 
 .BsImg2{
@@ -241,23 +229,14 @@ font-family: 'Merriweather Sans', sans-serif;
     
 }
 
-.BsinsideTra{
-    width: 200px;
-    height: 90px;
-    background-color: #252525;
-    opacity: 0.5;
-    position: relative;
-    bottom: 140px;
-    left: 70px;
-}
-
 .BssubTra{
     font-family: 'Playfair Display', serif;
-    font-size:1.2em;
+    font-size:1.5em;
     color: white;
     text-align: center;
     position: relative;
-    top: 30px;
+    bottom: 75px;
+    right: 80px;
 }
 
 .BsImg3{
@@ -266,49 +245,60 @@ font-family: 'Merriweather Sans', sans-serif;
    left: 15px;
 }
 
-.BsinsideHealth{
-    width: 200px;
-    height: 90px;
-    background-color: #252525;
-    opacity: 0.5;
-    position: relative;
-    bottom: 140px;
-    left: 70px;
-}
-
 .BssubHealth{
     font-family: 'Playfair Display', serif;
-    font-size:1.2em;
+    font-size:1.5em;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     position: relative;
-    top: 30px;
+    bottom: 75px;
+    right: 100px;
+   
 }
 
 .load{
     position: absolute;
   top: 710px;
-  left: 120px;
+  left: 110px;
 }
 
 button{
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1em;
-    width: 120px;
+    font-size: 0.8em;
+    width: 150px;
+    height: 30px;
     border-radius: 50px;
-    color: white;
-    background-color: #FF0000;
-    border: 1px solid #252525;
+    color: #de2f20;
+    background-color:white;
+    border: 1px solid #de2f20;
 }
 
+.arrow{
+    background-color:#de2f20;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 120px;
+    bottom: 1px;
+    
+}
+
+#iarrow{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+}
 .CallToAction{
     position: absolute;
     top: 760px;
-    left: 10px;
     background-color: #252525;
-    width: 340px;
-    height: 70px;
+    width: 100vw;
+    height: 100px;
 }
 
 .Club{
@@ -334,7 +324,7 @@ button{
     position: absolute;
     top: 450px;
     width: 110px;
-    background-color: #FF0000;
+    background-color: #de2f20;
     padding: 2;
 }
 
@@ -353,7 +343,7 @@ button{
     height: 5px;
     position: absolute;
     top: 480px;
-    background-color: #FF0000;
+    background-color: #de2f20;
 }
 .para{
     font-family: 'Merriweather Sans', sans-serif;
@@ -368,24 +358,24 @@ button{
  cursor: pointer;
 position: absolute;
 top: 950px;
-left: 15px;
+left: 10px;
 border-radius: 50px;
-background-color: #FF0000;
-width: 80px;
-border: 1px solid black;
+width: 150px;
+height: 30px;
+border: 1px solid #de2f20;
 }
 
 
 .last{
     position: relative;
-    text-align: white;
-    left: 20px;
-    bottom: 0.5px;
-    color: white;
+    right: 70px;
+    top: 5px;
+text-align: center;
+    color: #de2f20;
 }
 
 /*@keyFrames*/
 @keyframes slide {
-    from {transform: translateY(-80px);opacity: 0;}
-    to {transform: translateY(80px);opacity: 1;}
+    from {transform: translateX(-120px);opacity: 0;}
+    to {transform: translateX(10px);opacity: 1;}
 }
