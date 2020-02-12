@@ -14,13 +14,12 @@ h2 {
 
 .logo{
     position: absolute;
-    left: 80px;
-    top: 15px;
-    width: 200px;
-    height: 80px;
+    
+    width: 140px;
+    height: 60px;
 }
 
-/* modified this code however got it off w3Schools */
+/* modified this code however got it off w3Schools*/
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
@@ -40,7 +39,19 @@ input[type=text] {
   }
 /* w3Schools code */
 
+.nav-link{
+    color: lightslategray;
+}
+
+.close{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 1.5em;
+}
+
 #open{
+    z-index: 1;
     padding: 20 0;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -50,7 +61,7 @@ input[type=text] {
     width: 100vw;
     height: 100vh;
     text-align: justify;
-    
+    animation: slide 1s ease-in forwards;
 }
 
 .Hsubnav{
@@ -88,63 +99,41 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .navbar {
-    z-index: 3;
+    color: black;
     position: absolute;
+    top: 20px; 
+    right: 5px;
+    top: 5px;
+    max-width: 55px;
+    height: 50px;
+} 
+
+#search{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 65px;
     top: 20px;
-    max-width: 80px;
 }
 
-.user {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 35px;
+#bar{
+    display: none;
 }
+
 
 .header{
-    background-color: white;
+    background-color: #de2f20;
     position: fixed;
-    height: 100px;
+    height: 60px;
+    width: 100vw;
     z-index: 2;
 }
 
-.MainredSec{
-    position: relative;
-    top:100px;
-}
 
-.redSec{
-    position: relative;
-    top: 40px;
-}
 
-.TopLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
 
-.datesec{
-    z-index: -1;
-    background-color:#FF0000;
-    width: 360px;
-    height: 30px;
-}
 
-#navdate{
-    font-family: 'Merriweather Sans', sans-serif;
-    color: white;
-    font-size: 17px;
-    position: relative;
-    top: 5px;
-}
-
-.bottomLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
 
 #sub{
     font-family: 'Merriweather Sans', sans-serif;
@@ -396,3 +385,7 @@ border: 1px solid black;
 }
 
 /*@keyFrames*/
+@keyframes slide {
+    from {transform: translateY(-80px);opacity: 0;}
+    to {transform: translateY(80px);opacity: 1;}
+}
