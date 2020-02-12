@@ -27,8 +27,12 @@ AcceptButton.addEventListener('click', () =>{
 
 
 const pressed = document.getElementById('bar');
-const opened = document.getElementById('open')
+const opened = document.getElementById('open');
+const close = document.querySelector('.close');
 
 pressed.addEventListener('click',()=>{
-   opened.style.backgroundColor = 'white';
-});
+    opened.style.backgroundColor = 'white';
+    opened.style.display = 'block';
+    close.style.display = 'block';
+    pressed.style.display = 'none';
+ });

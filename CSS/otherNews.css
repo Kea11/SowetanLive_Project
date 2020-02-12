@@ -14,70 +14,129 @@ h2 {
 p{
     font-family: 'Merriweather Sans', sans-serif;
 }
+
 .logo{
     position: absolute;
-    background-color: white;
-    left: 82px;
-    top: 15px;
-    width: 200px;
-    height: 80px;
+    top:0px;
+    width: 140px;
+    height: 60px;
 }
 
-#navbar {
-    position: absolute;
-    background-color: white;
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+/* modified this code however got it off w3Schools */
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #252525;
+    font-size: 16px;
+    background-color: #FF0000;
+    color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  ::placeholder{
+    color: white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.nav-link{
+  color: lightslategray;
+}
+
+.close{
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  font-size: 1.5em;
+}
+
+/* w3Schools code */
+
+#open{
+    z-index: 1;
+    padding: 20 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    position: relative;
+    left: -16px;
     top: 20px;
-    border-style: none;
+    width: 100vw;
+    height: 100vh;
+    text-align: justify;
+    animation: slide 1s ease-in forwards;
 }
 
-.user {
-    width: 30px;
-    height: 30px;
+.Hsubnav{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+position: relative;
+left: 120px;
+}
+
+.Gsubnav{
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+    position: relative;
+    left: 145px;
+}
+
+.Osubnav{
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.6em;
+    color: #252525;
+    position: relative;
+    left: 145px;
+}
+
+.Hsubnav:hover{
+    color: #FF0000;
+}
+.Gsubnav:hover{
+    color: #FF0000;
+}
+.Osubnav:hover{
+    color: #FF0000;
+}
+
+.navbar {
+    color: black;
     position: absolute;
-    background-color: white;
-    right:20px;
-    top: 35px;
-    fill: #252525;
+    left: 300px;
+    top: 5px;
+    max-width: 55px;
+    height: 50px; 
+}
+
+#search{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 65px;
+    top: 20px;
+}
+
+#bar{
+    display: none;
 }
 
 .header{
+    background-color: #de2f20;
     position: fixed;
-    height: 100px;
-    background-color: white;
+    height: 60px;
+    width: 100vw;
     z-index: 2;
-    top: 0;
-}
-
-.redSec{
-    position: relative;
-    top:100px;
-}
-
-.TopLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
-
-.date{
-    font-size: 1em;
-    position: absolute;
-    top: 6px;
-    left: 8px;
-}
-.datesec{
-    z-index: -1;
-    background-color:#FF0000;
-    width: 360px;
-    height: 30px;
-    color: white;
-    font-size: 1em;
-}
-
-.bottomLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
 }
 
 #sub{
@@ -86,7 +145,6 @@ p{
     top: 7px;
     color: white;
     font-size: 1em;
-
 }
 
 .headingOne{
@@ -94,8 +152,9 @@ p{
     font-size: 2em;
     position:absolute;
     left: 25px;
-    top: 138px;
+    top: 70px;
     text-transform: uppercase;
+    
 }
 
 .newspaper{
@@ -103,35 +162,35 @@ p{
     height: 30px;
     position:absolute;
     right: 30px;
-    top: 144px;
-    stroke: #FF0000;
-    stroke-width: 0.4em;
+    top: 75px;
 }
 
 .otherImage{
-    width: 360px;
-    height: 200px;
+    width: 160px;
+    height: 100px;
     position:absolute;
-    top: 183px;
+    top: 130px;
+    right: 20px;
 }
 
 .figure-caption{
     position:absolute;
-    top: 380px;
+    top: 230px;
+    right: 20px;
 }
 
 .subheadingOne{
     font-family: 'Playfair Display', serif;
     position:absolute;
-    top: 420px; 
-    left: 55px;
-    font-size: 1.2em;
+    top: 125px; 
+    left: 20px;
+    font-size: 1.2em 
 
 }
 .para{
     position:absolute;
     padding: 10px;
-    top: 450px; 
+    top: 180px; 
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
