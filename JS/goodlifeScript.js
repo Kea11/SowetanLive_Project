@@ -10,19 +10,19 @@ pressed.addEventListener('click',()=>{
    pressed.style.display = 'none';
 });
 
-close.goBack('click',()=> {
+close.addEventListener('click', ()=> {
 window.history.back();
 });
 
-const back = document.querySelector('.back1');
+// const back = document.querySelector('.back1');
 
-back.addEventListener('click',()=>{
-    window.history.back();
-});
+// back.addEventListener('click',()=>{
+//     window.history.back();
+// });
 
-const subLog = document.querySelector('.user');
+// const subLog = document.querySelector('.user');
 
-subLog.addEventListener('click', () => {
-    window.location.href = 'SubscribePg.html';
-});
+// subLog.addEventListener('click', () => {
+//     window.location.href = 'SubscribePg.html';
+// });
 
