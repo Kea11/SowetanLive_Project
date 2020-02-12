@@ -10,6 +10,13 @@ close.addEventListener('click', () => {
 
 // This is the navbar navigation
 
+const pressed = document.getElementById('bar');
+const opened = document.getElementById('open')
+
+pressed.addEventListener('click',()=>{
+   opened.style.backgroundColor = 'white';
+});
+
 const nav = document.querySelector('.navbar');
 const test = document.querySelector('.drop');
 

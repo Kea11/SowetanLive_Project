@@ -20,25 +20,23 @@ h2 {
 /* --------THE HEADER SECTION-------- */
 .logo{
     position: absolute;
-    left: 80px;
-    top: 15px;
-    width: 200px;
-    height: 80px;
+    
+    width: 140px;
+    height: 60px;
 }
 
-/* modified this code however got it off w3Schools */
+/* modified this code however got it off w3Schools*/
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
     border: 1px solid #252525;
     font-size: 16px;
     background-color: #FF0000;
-    padding: 12px 20px 12px 5px;
+    padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
-
-  #bar ::placeholder{
+  ::placeholder{
       color: white;
   }
   
@@ -46,7 +44,20 @@ input[type=text] {
     width: 100%;
   }
 /* w3Schools code */
+
+.nav-link{
+    color: lightslategray;
+}
+
+.close{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 1.5em;
+}
+
 #open{
+    z-index: 1;
     padding: 20 0;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -57,11 +68,6 @@ input[type=text] {
     height: 100vh;
     text-align: justify;
     animation: slide 1s ease-in forwards;
-}
-
-@keyframes slide {
-    from {transform: scale(0);}
-    to {transform: scaleZ(7);}
 }
 
 .Hsubnav{
@@ -99,85 +105,48 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .navbar {
-    z-index: 3;
+    color: black;
+    position: absolute; 
+    right: 5px;
+    top: 5px;
+    max-width: 55px;
+    height: 50px;
+} 
+
+#search{
+    fill: white;
+    width: 20px;
+    height: 20px;
     position: absolute;
+    right: 65px;
     top: 20px;
-    max-width: 80px;
 }
 
-
-.user {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 35px;
+#bar{
+    display: none;
 }
+
 
 .header{
-    top: 0;
+    background-color: #de2f20;
     position: fixed;
-    height: 100px;
-    z-index: 100;
-    background: white;
+    height: 60px;
     width: 100vw;
+    z-index: 2;
 }
 
-.redSec{
-    position: relative;
-    top:100px;
-}
-
-.TopLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
-
-.datesec{
-    z-index: -1;
-    background-color:#FF0000;
-    width: 360px;
-    height: 30px;
-
-}
-
-.bottomLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
-
-#navdate {
-    font-size: 17px;
-    margin-left: 10px;
-    color: white;
-    position: relative;
-    top: 2px;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-#sub{
-    position: absolute;
-    right: 10px;
-    bottom: 0.5px;
-    font-size: 17px;
-    color: white;
-    font-family: 'Merriweather Sans', sans-serif;
-}
 
 
 /* --------OPINION PAGE-------- */
 
 .Kheading {
     font-family: 'Playfair Display', serif;
-    transform: translateY(150px);
+    transform: translateY(80px);
     font-size: 2em;
 }
 
 #speechBbl {
     width: 50px;
-    stroke: #FF0000;
     stroke-width: 0.2em;
 }
 
@@ -185,13 +154,13 @@ font-family: 'Merriweather Sans', sans-serif;
     margin: 10px;
     border-style: groove;
     position: relative;
-    top: 100px;
+    top: 30px;
     background-color: #eeeeee;
     height: 210px;
 }
 
 .Ktitle {
-    color: #FF0000;
+    color: #de2f20;
     text-decoration: underline;
     margin-left: 6px;
     margin-top: 5px;
@@ -239,7 +208,7 @@ a:active {
 /* -------ADDING YOUR COMMENT SECTION-------- */
 .YourSay {
     position: relative;
-    top: 70px;
+    top: 10px;
     left: 15px;
     display: inline-block;
     margin-left: 60px; 
@@ -248,49 +217,89 @@ a:active {
 
 .form {
     position: relative;
-    top: 90px;
+    top: 35px;
     margin-left: 10px;
+}
+
+.FormText {
+    position: relative;
+    left: 35px;
+    margin-bottom: 2px;
+    margin-top: 8px;
 }
 
 #name {
     color: black;
-    width: 235px;
+    width: 270px;
     max-height: 30px;
     position: relative;
-    left: 50px;
+    left: 35px;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 #article {
-    width: 235px;
+    width: 270px;
     max-height: 30px;
     position: relative;
-    left: 37px;
+    left: 35px;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 #comment {
-    width: 235px;
+    width: 270px;
     position: relative;
-    left: 17px;
+    left: 35px;
     height: 100px;
     border: 1px solid black;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+#checkbox {
+    position: relative;
+    top: 40px;
+    right: 240px;
+}
+
+#TnC {
+    position: relative;
+    left: 50px;
+    top: 12px;
+}
+
 #submit {
     position: relative;
-    left: 260px;
-    top: 90px;
+    left: 185px;
+    top: 60px;
     border-radius: 50px;
     padding: 2px;
-    width: 80px;
-    background-color: #FF0000;
-    color: white;
+    width: 130px;
+    height: 30px;
+    background-color: white;
+    color: #de2f20;
     font-family: 'Merriweather Sans', sans-serif;
-    border: 1px solid #252525;
-    font-size: 1em;
+    border: 1px solid #de2f20;
+    font-size: 0.8em;
 }
+
+.arrow{
+    background-color:#de2f20;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 285px;
+    top: 30px;
+}
+
+#iarrow{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 6px;
+    top: 5px;
+}
+
 
 
 /* >>>>>>>>>>>>> CLICKED PAGE <<<<<<<<<<<<<< */
@@ -362,7 +371,7 @@ a:active {
 .footer{
     background-color: #eeeeee;
     position: absolute;
-    top: 1470px;
+    top: 1550px;
     bottom: 0;
     height: 220px;
     padding: 20px;
@@ -374,7 +383,6 @@ a:active {
     padding: 8px;
     position: relative;
     left: 35px;
-    stroke: #FF0000;
     stroke-width: 0.8em;
     border-radius: 50%;
     /* fill: #252525; */
@@ -391,4 +399,10 @@ a:active {
     position: relative;
     left: 90px;
     margin: 10px;
+}
+
+/*@keyFrames*/
+@keyframes slide {
+    from {transform: translateY(-80px);opacity: 0;}
+    to {transform: translateY(80px);opacity: 1;}
 }

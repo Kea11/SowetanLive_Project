@@ -2,9 +2,9 @@
 
 const subLog = document.querySelector('.user');
 
-subLog.addEventListener('click', () => {
-    window.location.href = 'SubscribePg.html';
-});
+// subLog.addEventListener('click', () => {
+//     window.location.href = 'SubscribePg.html';
+// });
 
 
 
