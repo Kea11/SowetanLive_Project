@@ -17,46 +17,78 @@
 
 
      <div class="header">
-        <div id="navbar">
-            <nav class="navbar navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </nav>
-              <div class="drop">
-                  <p>This is a test</p>
-              </div>
-        </div>
-    
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg class="navbar" enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <rect y="277.33" width="384" height="42.667"/>
+            <rect y="170.67" width="384" height="42.667"/>
+            <rect y="64" width="384" height="42.667"/>
+      </svg>
 
-        <!-- SOWETAN LIVE LOGO -->
+      <?xml version="1.0" encoding="UTF-8"?>
+<svg id="search" width="512" height="512" enable-background="new 0 0 515.558 515.558" viewBox="0 0 515.56 515.56" xmlns="http://www.w3.org/2000/svg">
+<path d="m378.34 332.78c25.37-34.645 40.545-77.2 40.545-123.33 0-115.48-93.961-209.44-209.44-209.44s-209.44 93.961-209.44 209.44 93.961 209.44 209.44 209.44c46.133 0 88.692-15.177 123.34-40.547l137.21 137.21 45.564-45.564c0-1e-3 -137.21-137.21-137.21-137.21zm-168.9 21.667c-79.958 0-145-65.042-145-145s65.042-145 145-145 145 65.042 145 145-65.043 145-145 145z"/>
+</svg>
+
+
+     
+      <div id="bar">
+
+        <div class="close" value="Back">X</div>
+      <ul id="open" class="navbar-nav mr-auto">
+        <form>
+            <input type="text" name="search" style="color: white;" placeholder="Search..">
+          </form>
+               
+        <li class="nav-item">
+          <a style="text-align: center;" class="nav-link" href="index.html">Home </a>
+            <!-- this is the sections inside the actual page -->
+          <a style="text-align: center;" class='Hsubnav' href="index.html">Breaking News</a>
+          <br>
+          <a style="text-align: center;" class='Hsubnav' href="index.html">Other News</a>
+        </li>
+        <li class="nav-item">
+          <a style="text-align: center;" class="nav-link" href="goodlife.html">Good Life</a>
+          <!-- this is the sections inside the actual page -->
+          <a style="text-align: center;" class='Gsubnav' href="GoodlifeTwo.html">Weddings</a style="text-align: center;"><br>
+          <a style="text-align: center;" class='Gsubnav' href="GoodlifeThree.html">Travel</a><br>
+        <a style="text-align: center;" class='Gsubnav' href="GoodlifeFour.html">Health</a>
+        </li>
+
+        <li class="nav-item">
+          <a style="text-align: center;" class="nav-link" href="opinion.html">Opinion</a>
+
+          <!-- this is the sections inside the actual page -->
+          <a style="text-align: center;" class='Osubnav' href="opinion2.html">Letters</a>
+          <br>
+            <a style="text-align: center;" class='Osubnav' href="opinion3.html">Articles</a>
+            <br>
+          <a style="text-align: center;" class='Osubnav' href="opinion4.html">Coloumnist</a>
+          <br>
+          <a style="text-align: center;" class='Osubnav' href="opinion5.html">Editorials</a>
+        </li>
+      </ul>
+    </div>   
+        
         <div class="log">
-             <a href="index.html"><img src="assets/Images/logo.png" class="logo" alt=""></a>
-        </div>
-             
-        <!-- USER ICON -->
-        <div class="close">X</div>
-    
-        <div class="redSec">
-            <div class="TopLine"></div>
-            <div class="datesec">
-                <h4 id="navdate">DATE</h4>
-                <h4 id="sub">SUBSCRIBE | LOG IN</h4>
-            </div>
-            <div class="bottomLine"></div>
+             <a href="index.html"><img src="Assets/Images/rect823.png" class="logo" alt=""></a>
         </div>
     </div>
 
 
+
+
+    <!----------------- SUBSCRIBE & LOG IN --------------->
+
+
     <div class="container">
-        <div class="row align-items-start">
-            <div class="subscribe col-6"><a href="https://www.sowetanlive.co.za/u/sign-up/" style="color:#ff0000"><b>SUBSCRIBE</b></a>
-                <p><br>Help<br>Contact Us</p>
-            </div>
-            <div class="login col-6 border-left"><a href="https://www.sowetanlive.co.za/u/sign-in/" style="color:#ff0000"><b>LOG IN</b></a>
-                <p><br>Account<br>Billing Information<br>Gift Subcription</p>
-            </div>
+      <div class="row align-items-start">
+        <div class="subscribe col-6"><a href="https://www.sowetanlive.co.za/u/sign-up/" style="color:#de2f20"><b>SUBSCRIBE</b></a>
+          <p><br>Help<br>Contact Us</p>
         </div>
+        <div class="login col-6 border-left"><a href="https://www.sowetanlive.co.za/u/sign-in/" style="color:#de2f20"><b>LOG IN</b></a>
+          <p><br>Account<br>Billing Information<br>Gift Subcription</p>
+        </div>
+      </div>
     </div>
 
     
@@ -70,6 +102,22 @@
     <!-------------------- THE FOOTER -------------------->
 
     <div class="footer">
+
+      <div class="text">
+        <p class="footeTxt"> <strong>SowetanLIVE</strong></p>
+        <p id="footerSiteMap">
+          NEWS <br>
+          GOOD LIFE <br> 
+          OPINION <br>
+          POLITICS <br>
+          BUSINESS <br>
+          TECHNOLOGY <br>
+          MORE <br>
+      
+          © 2020 Arena Holdings (Pty) Ltd. All rights reserved.
+        </p>     
+      </div>
+
         <div class="media">
             <!-- Facebook icon -->
        <a href="https://www.facebook.com/sowetanlive/"><?xml version="1.0" encoding="UTF-8"?>
@@ -115,14 +163,6 @@
            <path d="m256.06 0h-0.128c-141.15 0-255.94 114.82-255.94 256 0 56 18.048 107.9 48.736 150.05l-31.904 95.104 98.4-31.456c40.48 26.816 88.768 42.304 140.83 42.304 141.15 0 255.94-114.85 255.94-256s-114.78-256-255.94-256zm148.96 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"/>
    </svg>
    </div>
-   
-   <div class="text">
-       <p class="footeTxt">SowetanLIVE <br>
-           © 2020 Arena Holdings (Pty) Ltd. All rights reserved.
-           Use of this site constitutes acceptance of our terms & conditions and privacy policy.</p>
-   </div>
-   
-   <img class="hold" src="assets/Images/Arena-Holdings-logo-email.jpeg" width="40%">
     </div>
    
    

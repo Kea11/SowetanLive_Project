@@ -1,12 +1,4 @@
-// const subLog = document.querySelector('.user');
-// const drop = document.querySelector('.container');
-
-// subLog.addEventListener('click', () => {
-//     drop.style.display = 'block';
-// });
-
-
-
+// This closes the Subscribe & Log In page
 
 const close = document.querySelector('.close');
 
@@ -16,6 +8,14 @@ close.addEventListener('click', () => {
 
 
 
+// This is the navbar navigation
+
+const pressed = document.getElementById('bar');
+const opened = document.getElementById('open')
+
+pressed.addEventListener('click',()=>{
+   opened.style.backgroundColor = 'white';
+});
 
 const nav = document.querySelector('.navbar');
 const test = document.querySelector('.drop');

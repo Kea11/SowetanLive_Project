@@ -1,29 +1,35 @@
-// This is the click event for the user icon on the far right
+// This is the navbar navigation
 
-const subLog = document.querySelector('.user');
+const pressed = document.querySelector('.navbar');
+const opened = document.getElementById('bar');
+const close = document.querySelector('.close');
+const logo = document.querySelector('.log');
 
-subLog.addEventListener('click', () => {
-    window.location.href = 'SubscribePg.html';
-});
-
-
-
-
-
-const pressed = document.getElementById('bar');
-const opened = document.getElementById('open')
 
 pressed.addEventListener('click',()=>{
    opened.style.backgroundColor = 'white';
+   opened.style.display = 'block';
+   close.style.display = 'block';
+   pressed.style.display = 'none';
+   logo.style.display = 'none';
+});
+
+close.goBack('click',()=> {
+window.location = 'OponionPage.html';
+});
+
+const back = document.querySelector('.back1');
+
+back.addEventListener('click',()=>{
+    window.history.back();
 });
 
 
+// const nav = document.querySelector('.navbar');
+// const test = document.querySelector('.drop');
 
-const nav = document.querySelector('.navbar');
-const test = document.querySelector('.drop');
+// test.style.display = 'none';
 
-test.style.display = 'none';
-
-nav.addEventListener('click', () => {
-    test.style.display = 'block';
-});
+// nav.addEventListener('click', () => {
+//     test.style.display = 'block';
+// });
