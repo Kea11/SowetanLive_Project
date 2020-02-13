@@ -166,61 +166,68 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .otherImage{
-    width: 160px;
+    width: 125px;
     height: 100px;
     position:absolute;
-    top: 130px;
-    right: 20px;
+    top: 165px;
+    right: 25px;
 }
 
 .figure-caption{
     position:absolute;
-    top: 230px;
-    right: 20px;
+    top: 262px;
+    right: 25px;
 }
 
 .subheadingOne{
     font-family: 'Playfair Display', serif;
     position:absolute;
     top: 125px; 
-    left: 20px;
+    left: 25px;
     font-size: 1.2em 
 
 }
 .para{
     position:absolute;
-    padding: 10px;
-    top: 180px; 
-    text-align: justify; 
+    left: 25px;
+    top: 160px; 
+    width: 160px;
+    height: 100px;
+    text-align: justify;
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
 
 }
 
 .otherImageCor{
-    width: 360px;
-    height: 200px;
+    width: 125px;
+    height: 100px;
     position:absolute;
-    top: 550px;
+    top: 350px;
+    right: 25px;
 }
 
 .figure-captionTwo{
     position:absolute;
-    top: 750px;
+    top: 445px;
+    right: 25px;
 }
 
 .subheadingTwo{
     font-family: 'Playfair Display', serif;
     position:absolute;
-    top: 790px; 
-    left: 30px;
+    top: 310px; 
+    left: 25px;
     font-size: 1.2em;
 
 }
 .paraTwo{
     position:absolute;
-    padding: 10px;
-    top: 820px; 
+    left: 25px;
+    top: 160px; 
+    width: 160px;
+    height: 100px;
+    top: 345px; 
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
@@ -229,47 +236,49 @@ font-family: 'Merriweather Sans', sans-serif;
 .firstDivider{
     width: 330px;
     height: 1px;
-    background-color: #252525;
+    background-color: lightgray;
     position: absolute;
-    top: 527px;
+    top: 295px;
     left: 15px;
 }
 
 .secondDivider{
     width: 330px;
     height: 1px;
-    background-color: #252525;
+    background-color: lightgray;
     position: absolute;
-    top: 897px;
+    top: 482px;
     left: 15px;
 }
 
 .subheadingSmall{
     font-family: 'Playfair Display', serif;
     position:absolute;
-    top: 920px; 
-    left: 30px;
+    top: 500px; 
+    left: 25px;
     font-size: 1.2em 
 }
 
 .joburgImage{
-    width: 160px;
+    width: 125px;
     height: 100px;
     position:absolute;
-    top: 925px;
-    right: 20px;
+    top: 560px;
+    right: 25px;
 }
 
 .figure-captionThree{
     position:absolute;
-    top: 1023px;
-    right: 20px;
+    top: 655px;
+    right: 25px;
 }
 
 .paraThree{
     position:absolute;
-    padding: 10px;
-    top: 1050px; 
+    left: 25px;
+    top: 558px; 
+    width: 160px;
+    height: 100px; 
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
@@ -278,38 +287,56 @@ font-family: 'Merriweather Sans', sans-serif;
 .thirdDivider{
     width: 330px;
     height: 1px;
-    background-color: #252525;
+    background-color: lightgray;
     position: absolute;
-    top: 1130px;
+    top: 692px;
     left: 15px;
+}
+
+.pageBreak{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 40px;
+    position: absolute;
+    top: 720px;
+    left: 0px;
+    width: 360px;
+    line-height: 25px;
+    height: 100px;
+    background-color:#252525;
+    color: white;
+   
 }
 
 .subheadingSmallTwo{
     font-family: 'Playfair Display', serif;
     position:absolute;
-    top: 1150px; 
-    left: 30px;
+    top: 850px; 
+    left: 25px;
     font-size: 1.2em 
 }
 
 .codingImage{
-    width: 160px;
+    width: 125px;
     height: 100px;
     position:absolute;
-    top: 1157px;
-    right: 20px;
+    top: 910px;
+    right: 25px;
 }
 
 .figure-captionFour{
     position:absolute;
-    top: 1255px;
-    right: 20px;
+    top: 1005px;
+    right: 25px;
 }
 
 .paraFour{
     position:absolute;
-    padding: 10px;
-    top: 1282px; 
+    top: 910px;
+    left: 25px;
+    width: 160px;
+    height: 100px; 
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
@@ -318,38 +345,40 @@ font-family: 'Merriweather Sans', sans-serif;
 .fourthDivider{
     width: 330px;
     height: 1px;
-    background-color: #252525;
+    background-color: lightgray;
     position: absolute;
-    top: 1360px;
+    top: 1042px;
     left: 15px;
 }
 
 .subheadingSmallThree{
     font-family: 'Playfair Display', serif;
     position:absolute;
-    top: 1379px; 
-    left: 30px;
+    top: 1058px; 
+    left: 25px;
     font-size: 1.2em 
 }
 
 .domesticLaw{
-    width: 160px;
+    width: 125px;
     height: 100px;
     position:absolute;
-    top: 1385px;
-    right: 20px;
+    top: 1124px;
+    right: 25px;
 }
 
 .figure-captionFive{
     position:absolute;
-    top: 1480px;
-    right: 20px;
+    top: 1219px;
+    right: 25px;
 }
 
 .paraFive{
     position:absolute;
-    padding: 10px;
-    top: 1505px; 
+    top: 1120px; 
+    left: 25px;
+    width: 160px;
+    height: 100px;
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
@@ -358,30 +387,28 @@ font-family: 'Merriweather Sans', sans-serif;
 .fifthDivider{
     width: 330px;
     height: 1px;
-    background-color: #252525;
+    background-color: lightgray;
     position: absolute;
-    top: 1588px;
+    top: 1260px;
     left: 15px;
 }
 
-
 .icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 8px;
     position: relative;
-    left: 31px;
-    stroke: #FF0000;
-    stroke-width: 0.8em;
+    left: 60px;
     border-radius: 50%;
     fill: #252525;
 }
 .footer{
     background-color: #eeeeee;
     position: absolute;
-    top: 1615px;
+    top: 1285px;
     bottom: 0;
-    height: 220px;
+    height: 400px;
+    width: 360px;
     padding: 20px;
 }
 
@@ -392,8 +419,10 @@ margin: 5px;
 font-size: 12px;
 }
 
-.hold{
-    position: relative;
-    left: 100px;
-    top: 12px;
+#footerSiteMap{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
 }
+

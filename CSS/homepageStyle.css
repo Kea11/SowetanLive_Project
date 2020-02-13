@@ -53,9 +53,10 @@ input[type=text] {
 
 .close{
     position: absolute;
-    left: 40px;
-    top: 40px;
+    right: 40px;
+    top: 10px;
     font-size: 1.5em;
+    z-index: 50;
 }
 /* w3Schools code */
 
@@ -146,31 +147,6 @@ font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 1em;
 
-}
-
-.icon{
-    width: 50px;
-    height: 50px;
-    padding: 8px;
-    position: relative;
-    left: 31px;
-    border-radius: 50%;
-    fill: #252525;
-}
-.footer{
-    background-color: #eeeeee;
-    position: absolute;
-    top: 1340px;
-    bottom: 0;
-    height: 220px;
-    padding: 20px;
-}
-
-.footeTxt{
-font-family: 'Merriweather Sans', sans-serif;
-text-align: center;
-margin: 5px;
-font-size: 12px;
 }
 
 .hold{
@@ -303,7 +279,6 @@ font-size: 12px;
 
 .paraTwoHead{
     font-family: 'Merriweather Sans', sans-serif;
-    /* text-align: justify; */
     line-height: 20px;
     width: 150px;
     height: 120px;
@@ -452,6 +427,69 @@ font-size: 12px;
 /* @keyframes for the navbar opening*/
 
 @keyframes slide {
-    from {transform: scale(0);}
-    to {transform: scaleZ(7);}
+    from {transform: translateX(-120px);opacity: 0;}
+    to {transform: translateX(10px);opacity: 1;}
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    position: relative;
+    left: 60px;
+    border-radius: 50%;
+    fill: #252525;
+}
+.footer{
+    background-color: #eeeeee;
+    position: absolute;
+    top: 1350px;
+    bottom: 0;
+    height: 400px;
+    width: 360px;
+    padding: 20px;
+}
+
+.footeTxt{
+font-family: 'Merriweather Sans', sans-serif;
+text-align: center;
+margin: 5px;
+font-size: 12px;
+}
+
+#footerSiteMap{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .logo{
+        position: absolute;
+        width: 200px;
+        height: 90px;
+        left: 40%;
+    }
+
+    .header{
+        background-color: #de2f20;
+        position: fixed;
+        height: 90px;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .navbar {
+       display: none; 
+    }
+
+    #search{
+        display: none;
+    }
+
+
 }

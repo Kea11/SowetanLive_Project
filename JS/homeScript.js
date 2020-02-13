@@ -26,13 +26,24 @@ AcceptButton.addEventListener('click', () =>{
 });
 
 
-const pressed = document.getElementById('bar');
-const opened = document.getElementById('open');
+const pressed = document.querySelector('.navbar');
+const opened = document.getElementById('bar');
 const close = document.querySelector('.close');
 
+
 pressed.addEventListener('click',()=>{
-    opened.style.backgroundColor = 'white';
-    opened.style.display = 'block';
-    close.style.display = 'block';
-    pressed.style.display = 'none';
- });
+   opened.style.backgroundColor = 'white';
+   opened.style.display = 'block';
+   close.style.display = 'block';
+   pressed.style.display = 'none';
+});
+
+close.addEventListener('click',()=> {
+window.location = "index.html"
+});
+
+const back = document.querySelector('.back1');
+
+back.addEventListener('click',()=>{
+    window.history.back();
+});
