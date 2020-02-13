@@ -45,7 +45,7 @@ input[type=text] {
 
 .close{
     position: absolute;
-   right: 30px;
+   right: 40px;
    top: 10px;
     font-size: 1.5em;
     z-index: 5;
@@ -116,6 +116,13 @@ font-family: 'Merriweather Sans', sans-serif;
     height: 25px;
 }
 
+#Subscribe{
+    position: absolute;
+    left: 50px;
+    text-decoration: #de2f20;
+    color: #de2f20;
+}
+
 #search{
     fill: white;
     width: 20px;
@@ -127,6 +134,9 @@ font-family: 'Merriweather Sans', sans-serif;
 
 #bar{
     display: none;
+    position: relative;
+    top: 20px;
+    
 }
 
 
@@ -151,33 +161,45 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     padding: 8px;
     position: relative;
-    left: 35px;
+    left: 60px;
+    border-radius: 50%;
+    fill: #252525;
 }
 .footer{
-   background-color: white;
-    height: 220px;
+    background-color: #eeeeee;
     position: absolute;
-    top: 980px;
+    top: 945px;
+    height: 390px;
+    width: 360px;
     padding: 20px;
 }
 
 .footeTxt{
+font-family: 'Merriweather Sans', sans-serif;
+text-align: center;
+margin: 5px;
+font-size: 12px;
+}
+
+#footerSiteMap{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
-    margin: 10px;
+
+    line-height: 35px;
     font-size: 12px;
 }
 
-.hold{
+/* .hold{
     position: relative;
     left: 90px;
     margin: 10px;
-}
+} */
+
+
 
 .Bstop{
     position: absolute;
@@ -236,7 +258,7 @@ font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
     position: relative;
     bottom: 75px;
-    right: 80px;
+    right: 70px;
 }
 
 .BsImg3{
@@ -253,9 +275,9 @@ font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
     position: relative;
     bottom: 75px;
-    right: 100px;
-   
+    right: 80px;
 }
+
 
 .load{
     position: absolute;
@@ -281,7 +303,7 @@ button{
     height: 30px;
     position: absolute;
     left: 120px;
-    bottom: 1px;
+    bottom: 0.5px;
     
 }
 
@@ -357,7 +379,7 @@ button{
 .back1{
  cursor: pointer;
 position: absolute;
-top: 950px;
+top: 900px;
 left: 10px;
 border-radius: 50px;
 width: 150px;
