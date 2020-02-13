@@ -14,13 +14,11 @@ h2 {
 p{
     font-family: 'Merriweather Sans', sans-serif;
 }
+
 .logo{
     position: absolute;
-    background-color: white;
-    left: 82px;
-    top: 15px;
-    width: 200px;
-    height: 80px;
+    width: 140px;
+    height: 60px;
 }
 
 #main{
@@ -48,9 +46,22 @@ input[type=text] {
   input[type=text]:focus {
     width: 100%;
   }
+
+  .nav-link{
+    color: lightslategray;
+}
+
+.close{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 1.5em;
+    z-index: 50;
+}
 /* w3Schools code */
 
 #open{
+    z-index: 1;
     padding: 20 0;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -98,61 +109,35 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .navbar {
-    z-index: 3;
+    color: black;
     position: absolute;
+    top: 20px; 
+    right: 5px;
+    top: 5px;
+    max-width: 55px;
+    height: 50px; 
+}
+
+#search{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 65px;
     top: 20px;
-    max-width: 80px;
 }
 
-
-.user {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background-color: white;
-    right:20px;
-    top: 35px;
-    fill: #252525;
+#bar{
+    display: none;
 }
+
 
 .header{
+    background-color: #de2f20;
     position: fixed;
-    height: 100px;
-    background-color: white;
+    height: 60px;
+    width: 100vw;
     z-index: 2;
-    top: 0;
-}
-
-.redSec{
-    position: relative;
-    top:100px;
-}
-
-.TopLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
-
-.date{
-    font-size: 1em;
-    position: absolute;
-    top: 6px;
-    left: 8px;
-}
-.datesec{
-    z-index: -1;
-    background-color:#FF0000;
-    width: 360px;
-    height: 30px;
-    color: white;
-    font-size: 1em;
-}
-
-.bottomLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
 }
 
 #sub{
@@ -162,33 +147,6 @@ font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 1em;
 
-}
-
-.icon{
-    width: 50px;
-    height: 50px;
-    padding: 8px;
-    position: relative;
-    left: 31px;
-    stroke: #FF0000;
-    stroke-width: 0.8em;
-    border-radius: 50%;
-    fill: #252525;
-}
-.footer{
-    background-color: #eeeeee;
-    position: absolute;
-    top: 1340px;
-    bottom: 0;
-    height: 220px;
-    padding: 20px;
-}
-
-.footeTxt{
-font-family: 'Merriweather Sans', sans-serif;
-text-align: center;
-margin: 5px;
-font-size: 12px;
 }
 
 .hold{
@@ -202,7 +160,7 @@ font-size: 12px;
     font-size: 2em;
     position:absolute;
     left: 25px;
-    top: 138px;
+    top: 70px;
     text-transform: uppercase;
 }
 
@@ -211,36 +169,34 @@ font-size: 12px;
     height: 30px;
     position:absolute;
     right: 30px;
-    top: 144px;
-    stroke: #FF0000;
-    stroke-width: 0.4em;
+    top: 75px;
 }
 
 .BreakingImage{
     width: 360px;
     height: 200px;
     position:absolute;
-    top: 183px;
+    top: 120px;
 }
 
 .figure-caption{
     position:absolute;
-    top: 380px;
+    top: 320px;
 }
 
 .subheadingOne{
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     position:absolute;
-    top: 420px; 
-    left: 120px;
+    top: 349px; 
+    left: 70px;
     font-size: 1.2em;
 
 }
 .para{
     position:absolute;
     padding: 10px;
-    top: 450px; 
+    top: 370px; 
     text-align: justify; 
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
@@ -251,12 +207,13 @@ font-size: 12px;
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     position: absolute;
-    top: 215px;
-    left: 10px;
-    width: 340px;
-    height: 70px;
+    top: 670px;
+    left: 0px;
+    width: 360px;
+    line-height: 25px;
+    height: 100px;
     background-color:#252525;
     color: white;
    
@@ -265,17 +222,30 @@ font-size: 12px;
     font-family: 'Playfair Display', serif;
     text-decoration-line: underline;
     position:absolute;
-    top: 750px; 
+    top: 800px; 
     left: 20px;
     font-size: 1.2em; 
 }
 
 .newsImage{
     width: 150px;
+    height: 100px;
+    position:absolute;
+    top: 845px; 
+    right: 20px;
+}
+
+.paraHead{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    width: 150px;
     height: 120px;
     position:absolute;
-    top: 790px; 
-    left: 20px;
+    top: 835px; 
+    left: 20px; 
+    font-size: 1.2em;
+    line-height: 25px; 
 }
 
 .paraSm{
@@ -285,27 +255,39 @@ font-size: 12px;
     width: 150px;
     height: 120px;
     position:absolute;
-    top: 797px; 
-    right: 20px;
-    line-height: 17px;
+    top: 890px; 
+    left: 20px;
+    font-size: 17px;
 }
 
 .divider{
     width: 320px;
     height: 0.5px;
-    background-color: #252525;
+    background-color: lightslategray;
     position: absolute;
-    top: 928px;
+    top: 968px;
     left: 19px;
 }
 
 .newsImageTwo{
     width: 150px;
-    height: 120px;
+    height: 100px;
     position:absolute;
-    top: 940px; 
+    top: 963px; 
     right: 20px;
 }  
+
+.paraTwoHead{
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 20px;
+    width: 150px;
+    height: 120px;
+    position:absolute;
+    top: 955px; 
+    left: 20px; 
+    font-size: 1.2em;
+    line-height: 25px;   
+}
 
 .paraTwo{
     font-family: 'Merriweather Sans', sans-serif;
@@ -314,19 +296,19 @@ font-size: 12px;
     width: 150px;
     height: 120px;
     position:absolute;
-    top: 947px; 
-    left: 20px; 
-    line-height: 17px;
+    top: 1005px; 
+    left: 20px;
+    font-size: 17px; 
 }
 
-.goodLife{
+.goodImg{
     border-style: groove;
     margin: 10px;
-    height: 100px;
+    height: 120px;
+    width: 340px;
     position: absolute;
     top: 1100px;
-    background-color: #eeeeee;
-    width: 340px;
+
 }
 
 .sunglasses{
@@ -334,17 +316,19 @@ font-size: 12px;
     height: 85px;
     padding-left: 10px;
     position: absolute;
-    top:7px;
-    stroke: #FF0000;
-    stroke-width: 0.4em;
+    top:1122px;
+    left: 15px;
+    fill: white;
+    
 }
 
 .goodLifeHead{
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     position:absolute;
-    top: 7px;
+    top: 1125px;
     left: 145px;
+    color: white;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -352,21 +336,22 @@ font-size: 12px;
 .goodLifePara{
     text-align: justify;
     display: inline-block;
+    color: white;
     position: absolute;
-    top: 40px;
+    top: 1160px;
     left: 125px;
     line-height: 17px;
 
 }
 
-.opinion{
+.opinionImg{
     border-style: groove;
     margin: 10px;
-    height: 100px;
+    height: 120px;
+    width: 340px;
     position: absolute;
     top: 1200px;
-    background-color: #eeeeee;
-    width: 340px;
+
 }
 
 .chat{
@@ -374,17 +359,18 @@ font-size: 12px;
     height: 80px;
     padding-left: 10px;
     position: absolute;
-    top:7px;
-    stroke: #FF0000;
-    stroke-width: 0.4em;
+    top:1230px;
+    fill:white;
+    left: 15px;
 }
 
 .opinionHead{
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     position:absolute;
-    top: 7px;
+    top: 1230px;
     left: 148px;
+    color: white;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -392,8 +378,9 @@ font-size: 12px;
 .opinionPara{
     text-align: justify;
     display: inline-block;
+    color: white;
     position: absolute;
-    top: 40px;
+    top: 1270px;
     left: 125px;
     line-height: 17px;
 }
@@ -440,6 +427,69 @@ font-size: 12px;
 /* @keyframes for the navbar opening*/
 
 @keyframes slide {
-    from {transform: scale(0);}
-    to {transform: scaleZ(7);}
+    from {transform: translateX(-120px);opacity: 0;}
+    to {transform: translateX(10px);opacity: 1;}
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    position: relative;
+    left: 60px;
+    border-radius: 50%;
+    fill: #252525;
+}
+.footer{
+    background-color: #eeeeee;
+    position: absolute;
+    top: 1350px;
+    bottom: 0;
+    height: 400px;
+    width: 360px;
+    padding: 20px;
+}
+
+.footeTxt{
+font-family: 'Merriweather Sans', sans-serif;
+text-align: center;
+margin: 5px;
+font-size: 12px;
+}
+
+#footerSiteMap{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .logo{
+        position: absolute;
+        width: 200px;
+        height: 90px;
+        left: 40%;
+    }
+
+    .header{
+        background-color: #de2f20;
+        position: fixed;
+        height: 90px;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .navbar {
+       display: none; 
+    }
+
+    #search{
+        display: none;
+    }
+
+
 }
