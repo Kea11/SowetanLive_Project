@@ -41,7 +41,7 @@ input[type=text] {
   }
   
   input[type=text]:focus {
-    width: 100%;
+    width: 99%;
   }
 /* w3Schools code */
 
@@ -51,9 +51,10 @@ input[type=text] {
 
 .close{
     position: absolute;
-    left: 40px;
-    top: 40px;
+    left: 300px;
+    top: 10px;
     font-size: 1.5em;
+    z-index: 50;
 }
 
 #open{
@@ -152,11 +153,20 @@ font-family: 'Merriweather Sans', sans-serif;
 
 .opinionSec {
     margin: 10px;
-    border-style: groove;
+    /* border-style: groove; */
     position: relative;
-    top: 30px;
-    background-color: #eeeeee;
+    top: 40px;
+    /* background-color: #eeeeee; */
     height: 210px;
+}
+
+.PageLine {
+    height: 0.5px;
+    width: 330px;
+    background-color: lightgrey;
+    position: relative;
+    left: 15px;
+    top: 20px;
 }
 
 .Ktitle {
@@ -217,7 +227,7 @@ a:active {
 
 .form {
     position: relative;
-    top: 35px;
+    top: 30px;
     margin-left: 10px;
 }
 
@@ -235,6 +245,14 @@ a:active {
     position: relative;
     left: 35px;
     font-family: 'Merriweather Sans', sans-serif;
+}
+
+#email {
+    width: 270px;
+    max-height: 30px;
+    position: relative;
+    left: 35px;
+    font-family: 'Merriweather Sans', sans-serif;   
 }
 
 #article {
@@ -314,7 +332,7 @@ a:active {
 }
 
 .letter {
-    background: #FF0000;
+    background: #de2f20;
     display: inline-block;
     position: relative;
     top: 250px;
@@ -324,7 +342,7 @@ a:active {
 }
 
 .letterbot {
-    background: #FF0000;
+    background: #de2f20;
     position: relative;
     top: 245px;
     margin-left: 10px;
@@ -341,29 +359,40 @@ a:active {
 }
 
 #return {
-    width: 80px;
+    width: 130px;
+    height: 30px;
     margin-left: 10px;
     position: relative;
     top: 320px;
-    stroke: #FF0000;
-    stroke-width: 0.8em;
     cursor: pointer;
     border-radius: 50px;
     padding: 2px;
-    width: 80px;
-    background-color: #FF0000;
-    color: white;
+    background-color: white;
+    color: #de2f20;
     font-family: 'Merriweather Sans', sans-serif;
-    border: 1px solid black;
-    font-size: 1em;
+    border: 1px solid #de2f20;
+    font-size: 0.8em;
 }
 
-#Kback {
+.OParrow {
+    background-color:#de2f20;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     position: relative;
-    top: 295px;
-    left: 50px;
-    text-decoration: underline;
+    left: 109px;
+    top: 290px;
 }
+
+#OPiarrow {
+    fill: white;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 6px;
+    top: 5px;
+}
+
 
 
 
@@ -371,38 +400,39 @@ a:active {
 .footer{
     background-color: #eeeeee;
     position: absolute;
-    top: 1550px;
+    top: 1650px;
     bottom: 0;
-    height: 220px;
+    height: 390px;
+    width: 360px;
     padding: 20px;
 }
 
 .icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 8px;
     position: relative;
-    left: 35px;
-    stroke-width: 0.8em;
+    left: 60px;
     border-radius: 50%;
-    /* fill: #252525; */
+    fill: #252525;
 }
 
 .footeTxt{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     font-size: 12px;
 }
 
-.hold{
-    position: relative;
-    left: 90px;
-    margin: 10px;
+#footerSiteMap{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
 }
 
 /*@keyFrames*/
 @keyframes slide {
-    from {transform: translateY(-80px);opacity: 0;}
-    to {transform: translateY(80px);opacity: 1;}
+    from {transform: translateX(-120px);opacity: 0;}
+    to {transform: translateX(10px);opacity: 1;}
 }

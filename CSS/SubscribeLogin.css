@@ -20,26 +20,23 @@ h2 {
 /* --------THE HEADER SECTION-------- */
 .logo{
     position: absolute;
-    left: 80px;
-    top: 15px;
-    width: 200px;
-    height: 80px;
-    z-index: 1;
+    
+    width: 140px;
+    height: 60px;
 }
 
-/* modified this code however got it off w3Schools */
+/* modified this code however got it off w3Schools*/
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
     border: 1px solid #252525;
     font-size: 16px;
     background-color: #FF0000;
-    padding: 12px 20px 12px 5px;
+    padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
-
-  #bar ::placeholder{
+  ::placeholder{
       color: white;
   }
   
@@ -47,7 +44,20 @@ input[type=text] {
     width: 100%;
   }
 /* w3Schools code */
+
+.nav-link{
+    color: lightslategray;
+}
+
+.close{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 1.5em;
+}
+
 #open{
+    z-index: 1;
     padding: 20 0;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -58,11 +68,6 @@ input[type=text] {
     height: 100vh;
     text-align: justify;
     animation: slide 1s ease-in forwards;
-}
-
-@keyframes slide {
-    from {transform: scale(0);}
-    to {transform: scaleZ(7);}
 }
 
 .Hsubnav{
@@ -99,90 +104,37 @@ font-family: 'Merriweather Sans', sans-serif;
     color: #FF0000;
 }
 
-#navbar {
+.navbar {
+    color: black;
+    position: absolute; 
+    right: 5px;
+    top: 5px;
+    max-width: 55px;
+    height: 50px;
+} 
+
+#search{
+    fill: white;
+    width: 20px;
+    height: 20px;
     position: absolute;
+    right: 65px;
     top: 20px;
-    border-style: none;
 }
 
-.user {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 35px;
+#bar{
+    display: none;
 }
+
 
 .header{
-    top: 0;
+    background-color: #de2f20;
     position: fixed;
-    height: 100px;
-    z-index: 100;
-    background: white;
+    height: 60px;
     width: 100vw;
+    z-index: 2;
 }
 
-.redSec{
-    position: relative;
-    top:100px;
-}
-
-.TopLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
-
-.datesec{
-    z-index: -1;
-    background-color:#FF0000;
-    width: 360px;
-    height: 30px;
-
-}
-
-.bottomLine{
-    width: 360px;
-    height: 1.5px;
-    background-color: #252525;
-}
-
-#navdate {
-    font-size: 17px;
-    margin-left: 10px;
-    color: white;
-    position: relative;
-    top: 2px;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-#sub{
-    position: absolute;
-    right: 10px;
-    bottom: 0.5px;
-    font-size: 17px;
-    color: white;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-.drop {
-    background-color: white;
-    /* height: 100px; */
-    width: 360px;
-    height: 570px;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 10px;
-    color: #818181;
-    display: block;
-    animation: slide 1s ease-in forwards;
-    z-index: 1000;
-}
-
-@keyframes slide {
-    from {transform: scale(0);}
-    to {transform: scaleZ(7);}
-}
 
 
 /* SUBSCRIBE & LOG IN */
@@ -196,13 +148,13 @@ font-family: 'Merriweather Sans', sans-serif;
 
 .subscribe {
     position: relative;
-    top: 200px;
+    top: 150px;
     color: #252525;
 }
 
 .login {
     position: relative;
-    top: 200px;
+    top: 150px;
     color: #252525;
 }
 
@@ -212,33 +164,34 @@ font-family: 'Merriweather Sans', sans-serif;
 .footer{
     background-color: #eeeeee;
     position: absolute;
-    top: 420px;
+    top: 450px;
     bottom: 0;
-    height: 220px;
+    height: 390px;
+    width: 360px;
     padding: 20px;
 }
 
 .icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 8px;
     position: relative;
-    left: 35px;
-    stroke: #FF0000;
-    stroke-width: 0.8em;
+    left: 60px;
     border-radius: 50%;
-    /* fill: #252525; */
+    fill: #252525;
 }
 
 .footeTxt{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     font-size: 12px;
 }
 
-.hold{
-    position: relative;
-    left: 90px;
-    margin: 10px;
+#footerSiteMap{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+
+    line-height: 35px;
+    font-size: 12px;
 }
