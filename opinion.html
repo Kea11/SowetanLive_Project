@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description=" content="Discover the viewers opinions, articles, editorials and coloumns.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/opinionStyle.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Playfair+Display:700&display=swap" rel="stylesheet">
+
+    <title>Opinion Page</title>
+</head>
+
+<body>
+
+    <!------------------ THE HEADER SECTION ------------------>
+
+
+    <div class="header">
+        <!-- got this code from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ and modified it to suit our code-->
+        <nav id="bar" class="navbar navbar-light light-blue lighten-4">
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          
+              <!-- Links inside the navbar -->
+              <ul id="open" class="navbar-nav mr-auto">
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                  </form>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="index.html">Home </a>
+                    <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Breaking News</a>
+                  <br>
+                  <a style="text-align: center;" class='Hsubnav' href="index.html">Other News</a>
+                </li>
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="goodlife.html">Good Life</a>
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeTwo.html">Weddings</a style="text-align: center;"><br>
+                  <a style="text-align: center;" class='Gsubnav' href="GoodlifeThree.html">Travel</a><br>
+                <a style="text-align: center;" class='Gsubnav' href="GoodlifeFour.html">Health</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="text-align: center;" class="nav-link" href="opinion.html">Opinion</a>
+
+                  <!-- this is the sections inside the actual page -->
+                  <a style="text-align: center;" class='Osubnav' href="opinion2.html">Letters</a>
+                  <br>
+                    <a style="text-align: center;" class='Osubnav' href="opinion3.html">Articles</a>
+                    <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion4.html">Coloumnist</a>
+                  <br>
+                  <a style="text-align: center;" class='Osubnav' href="opinion5.html">Editorials</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+
+        <!-- SOWETAN LIVE LOGO -->
+        <div class="log">
+             <a href="index.html"><img src="assets/Images/logo.png" class="logo" alt=""></a>
+        </div>
+             
+        <!-- USER ICON -->
+        
+        <div class="user"><?xml version="1.0" encoding="UTF-8"?>
+            <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="m210.35 246.63c33.883 0 63.223-12.152 87.195-36.129 23.973-23.973 36.125-53.305 36.125-87.191 0-33.875-12.152-63.211-36.129-87.191-23.977-23.969-53.312-36.121-87.191-36.121-33.887 0-63.219 12.152-87.191 36.125s-36.129 53.309-36.129 87.188c0 33.887 12.156 63.223 36.133 87.195 23.977 23.969 53.312 36.125 87.188 36.125z"/>
+                <path d="m426.13 393.7c-0.69141-9.9766-2.0898-20.859-4.1484-32.352-2.0781-11.578-4.7539-22.523-7.957-32.527-3.3086-10.34-7.8086-20.551-13.371-30.336-5.7734-10.156-12.555-19-20.164-26.277-7.957-7.6133-17.699-13.734-28.965-18.199-11.227-4.4414-23.668-6.6914-36.977-6.6914-5.2266 0-10.281 2.1445-20.043 8.5-6.0078 3.918-13.035 8.4492-20.879 13.461-6.707 4.2734-15.793 8.2773-27.016 11.902-10.949 3.543-22.066 5.3398-33.039 5.3398-10.973 0-22.086-1.7969-33.047-5.3398-11.211-3.6211-20.297-7.625-26.996-11.898-7.7695-4.9648-14.801-9.4961-20.898-13.469-9.75-6.3555-14.809-8.5-20.035-8.5-13.312 0-25.75 2.2539-36.973 6.6992-11.258 4.457-21.004 10.578-28.969 18.199-7.6055 7.2812-14.391 16.121-20.156 26.273-5.5586 9.7852-10.059 19.992-13.371 30.34-3.1992 10.004-5.875 20.945-7.9531 32.523-2.0586 11.477-3.457 22.363-4.1484 32.363-0.67969 9.7969-1.0234 19.965-1.0234 30.234 0 26.727 8.4961 48.363 25.25 64.32 16.547 15.746 38.441 23.734 65.066 23.734h246.53c26.625 0 48.512-7.9844 65.062-23.734 16.758-15.945 25.254-37.586 25.254-64.324-0.003906-10.316-0.35156-20.492-1.0352-30.242z"/>
+            </svg>
+        </div>
+    
+        <div class="redSec">
+            <div class="TopLine"></div>
+            <div class="datesec">
+                <h4 id="navdate">DATE</h4>
+                <h4 id="sub">SUBSCRIBE | LOG IN</h4>
+            </div>
+            <div class="bottomLine"></div>
+        </div>
+    </div>
+
+
+
+    <!--------------------- OPINION PAGE -------------------->
+
+    <div> <!--beginning of page content-->
+        <div class="heading w-100 text-center">
+            <h1 class="Kheading">OPINION    
+                <svg id="speechBbl" viewBox="0 -26 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="m256 100c-5.5195 0-10 4.4805-10 10s4.4805 10 10 10 10-4.4805 10-10-4.4805-10-10-10z"/>
+                <path d="m90 280c5.5195 0 10-4.4805 10-10s-4.4805-10-10-10-10 4.4805-10 10 4.4805 10 10 10z"/>
+                <path d="m336 0c-90.027 0-163.92 62.07-169.63 140.25-85.738 4.3008-166.37 66.125-166.37 149.75 0 34.945 13.828 68.805 39 95.633 4.9805 20.531-1.0664 42.293-16.07 57.297-2.8594 2.8594-3.7148 7.1602-2.168 10.898 1.5469 3.7344 5.1914 6.1719 9.2383 6.1719 28.52 0 56.004-11.184 76.426-30.891 19.895 6.7812 45.852 10.891 69.574 10.891 90.016 0 163.9-62.055 169.63-140.22 20.938-0.92969 42.715-4.7969 59.945-10.668 20.422 19.707 47.906 30.891 76.426 30.891 4.0469 0 7.6914-2.4375 9.2383-6.1719 1.5469-3.7383 0.69141-8.0391-2.168-10.898-15.004-15.004-21.051-36.766-16.07-57.297 25.172-26.828 39-60.688 39-95.633 0-86.887-86.84-150-176-150zm-160 420c-23.602 0-50.496-4.6328-68.512-11.801-3.8594-1.5391-8.2695-0.52734-11.078 2.5391-12.074 13.199-27.773 22.402-44.879 26.633 9.4258-18.059 11.832-39.348 6.0977-59.52-0.45312-1.5898-1.293-3.043-2.4453-4.2266-22.688-23.367-35.184-53.066-35.184-83.625 0-70.469 71.438-130 156-130 79.852 0 150 55.527 150 130 0 71.684-67.289 130-150 130zm280.82-186.38c-1.1523 1.1875-1.9922 2.6406-2.4453 4.2266-5.7344 20.172-3.3281 41.461 6.0977 59.52-17.105-4.2266-32.805-13.434-44.879-26.633-2.8086-3.0625-7.2188-4.0781-11.078-2.5391-15.613 6.2109-37.887 10.512-58.914 11.551-2.9219-37.816-21.785-73.359-54.035-99.75h130.44c5.5234 0 10-4.4766 10-10s-4.4766-10-10-10h-161.16c-22.699-11.555-48.188-18.293-74.422-19.707 5.7461-67.164 70.641-120.29 149.58-120.29 84.562 0 156 59.531 156 130 0 30.559-12.496 60.258-35.184 83.625z"/>
+                <path d="m256 260h-126c-5.5234 0-10 4.4766-10 10s4.4766 10 10 10h126c5.5234 0 10-4.4766 10-10s-4.4766-10-10-10z"/>
+                <path d="m256 320h-166c-5.5234 0-10 4.4766-10 10s4.4766 10 10 10h166c5.5234 0 10-4.4766 10-10s-4.4766-10-10-10z"/>
+                <path d="m422 100h-126c-5.5234 0-10 4.4766-10 10s4.4766 10 10 10h126c5.5234 0 10-4.4766 10-10s-4.4766-10-10-10z"/>
+                </svg></h1>
+        </div>
+            
+            <br><br>
+        
+        
+        
+            <!-------------------- THE LETTER SECTION -------------------->
+        
+        <div class="op1">
+            <div class="opinionSec">
+                <a href="opinion2.html">
+                <h6 class="Ktitle">LETTER</h6>
+                <h4 class="Ksubhead">SUB HEADING</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing. Tempore in, maxime sapiente.</p>
+                <img class="pic" id="letpic" src="assets/Images/AdobeStock_297800292_Preview.jpeg"></a>
+                <h6 class="Kauth">AUTHOR</h6>
+                <h6 class="Kauth">DATE</h6>
+            </div>
+        
+        
+        
+            <!------------------- THE ARTICLE SECTION ------------------->
+        
+            <div class="opinionSec">
+                <a href="opinion3.html">
+                <h6 class="Ktitle">ARTICLE</h6>
+                <h4 class="Ksubhead">SUB HEADING</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing. Tempore in, maxime sapiente.</p>
+                    <img src="assets/Images/AdobeStock_292951282_Preview.jpeg" class="pic"></a>
+                <h6 class="Kauth">AUTHOR</h6>
+                <h6 class="Kauth">DATE</h6>
+            </div>
+        
+        
+        
+            <!------------------ THE COLOUMNIST SECTION ------------------>
+        
+            <div class="opinionSec">
+                <a href="opinion4.html">
+                <h6 class="Ktitle">COLOUMNIST</h6>
+                <h4 class="Ksubhead">SUB HEADING</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing. Tempore in, maxime sapiente.</p>
+                    <img src="assets/Images/AdobeStock_299035676_Preview.jpeg" class="pic"></a>
+                <h6 class="Kauth">AUTHOR</h6>
+                <h6 class="Kauth">DATE</h6>
+            </div>
+        
+        
+        
+            <!------------------- THE EDITORIAL SECTION ------------------>
+        
+            <div class="opinionSec">
+                <a href="opinion5.html">
+                <h6 class="Ktitle">EDITORIAL</h6>
+                <h4 class="Ksubhead">SUB HEADING</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing. Tempore in, maxime sapiente.</p>
+                    <img src="assets/Images/AdobeStock_283129831_Preview.jpeg" class="pic"></a>
+                <h6 class="Kauth">AUTHOR</h6>
+                <h6 class="Kauth">DATE</h6>
+            </div>
+        
+        
+        
+            <!----------------- ADDING YOUR COMMENT SECTION ----------------->
+        
+            <h2 class="YourSay">Have Your Say</h2>
+        
+            <form class="form" action="">
+                <label for="name">NAME:<input style="background-color: white;" type="text" placeholder="Type your name here" id="name"></label>
+                <label for="articleName">ARTICLE:<input style="background-color: white;" type="text" placeholder="Name of article" id="article"></label>
+                <label for="comment">COMMENT:<textarea name="message" id="comment" cols="20" rows="5" placeholder="Add comment here"></textarea></label>
+            </form>
+        
+            <button id="submit" type="submit">SUBMIT</button>
+        </div>
+    </div> <!--end of page content-->
+
+
+
+    <!-------------------- THE FOOTER -------------------->
+
+    <div class="footer">
+     <div class="media">
+         <!-- Facebook icon -->
+    <a href="https://www.facebook.com/sowetanlive/"><?xml version="1.0" encoding="UTF-8"?>
+    <svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="m297.28 508.67c-2.1328 0.34766-4.2734 0.66797-6.4219 0.96094 2.1484-0.29297 4.2891-0.61328 6.4219-0.96094z"/>
+    <path d="m302.4 507.79c-1.0195 0.1875-2.0391 0.35938-3.0586 0.53516 1.0195-0.17578 2.0391-0.34766 3.0586-0.53516z"/>
+    <path d="m285.14 510.34c-2.4961 0.28125-5.0078 0.53125-7.5273 0.74219 2.5195-0.21094 5.0312-0.46094 7.5273-0.74219z"/>
+    <path d="m290.05 509.74c-1.1992 0.16016-2.4062 0.30859-3.6094 0.44922 1.2031-0.14062 2.4102-0.28906 3.6094-0.44922z"/>
+    <path d="m309.37 506.41c-0.89844 0.19141-1.8008 0.38281-2.7031 0.56641 0.90234-0.18359 1.8047-0.375 2.7031-0.56641z"/>
+    <path d="m326.66 502.11c-0.72656 0.20703-1.4531 0.40234-2.1797 0.60547 0.72656-0.20312 1.4531-0.39844 2.1797-0.60547z"/>
+    <path d="m321.43 503.54c-0.78906 0.20703-1.582 0.41797-2.375 0.61719 0.79297-0.19922 1.5859-0.40625 2.375-0.61719z"/>
+    <path d="m314.59 505.25c-0.83594 0.19531-1.6797 0.37891-2.5234 0.56641 0.84375-0.1875 1.6875-0.37109 2.5234-0.56641z"/>
+    <path d="m277.53 511.09c-1.3477 0.11328-2.6953 0.21484-4.0469 0.30469 1.3516-0.089843 2.6992-0.19141 4.0469-0.30469z"/>
+    <path d="m512 256c0-141.36-114.64-256-256-256s-256 114.64-256 256 114.64 256 256 256c1.5039 0 3-0.03125 4.5-0.058594v-199.29h-55v-64.098h55v-47.168c0-54.703 33.395-84.477 82.191-84.477 23.367 0 43.453 1.7422 49.309 2.5195v57.172h-33.648c-26.547 0-31.688 12.617-31.688 31.129v40.824h63.477l-8.2734 64.098h-55.203v189.45c107-30.676 185.34-129.26 185.34-246.11z"/>
+    <path d="m272.91 511.43c-2.6641 0.17187-5.3398 0.30859-8.0234 0.39844 2.6836-0.089844 5.3594-0.22656 8.0234-0.39844z"/>
+    <path d="m264.75 511.84c-1.4141 0.046874-2.832 0.082031-4.25 0.10547 1.418-0.023437 2.8359-0.058594 4.25-0.10547z"/>
+    </svg></a>
+
+    <!-- Twitter icon -->
+    <a href="https://twitter.com/SowetanLIVE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><?xml version="1.0" encoding="UTF-8"?>
+<svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm116.89 199.6c0.11328 2.5195 0.16797 5.0508 0.16797 7.5938 0 77.645-59.102 167.18-167.18 167.18h0.003906-0.003906c-33.184 0-64.062-9.7266-90.066-26.395 4.5977 0.54297 9.2773 0.8125 14.016 0.8125 27.531 0 52.867-9.3906 72.98-25.152-25.723-0.47656-47.41-17.465-54.895-40.812 3.582 0.6875 7.2656 1.0625 11.043 1.0625 5.3633 0 10.559-0.72266 15.496-2.0703-26.887-5.3828-47.141-29.145-47.141-57.598 0-0.26562 0-0.50391 0.007812-0.75 7.918 4.4023 16.973 7.0508 26.613 7.3477-15.777-10.527-26.148-28.523-26.148-48.91 0-10.766 2.9102-20.852 7.957-29.535 28.977 35.555 72.281 58.938 121.12 61.395-1.0078-4.3047-1.5273-8.7891-1.5273-13.398 0-32.438 26.316-58.754 58.766-58.754 16.902 0 32.168 7.1445 42.891 18.566 13.387-2.6406 25.957-7.5312 37.312-14.262-4.3945 13.715-13.707 25.223-25.84 32.5 11.887-1.4219 23.215-4.5742 33.742-9.2539-7.8633 11.785-17.836 22.137-29.309 30.43z"/>
+</svg></a>
+
+<!-- LinkedIn icon -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm-74.391 387h-62.348v-187.57h62.348zm-31.172-213.19h-0.40625c-20.922 0-34.453-14.402-34.453-32.402 0-18.406 13.945-32.41 35.273-32.41 21.328 0 34.453 14.004 34.859 32.41 0 18-13.531 32.402-35.273 32.402zm255.98 213.19h-62.34v-100.35c0-25.219-9.0273-42.418-31.586-42.418-17.223 0-27.48 11.602-31.988 22.801-1.6484 4.0078-2.0508 9.6094-2.0508 15.215v104.75h-62.344s0.81641-169.98 0-187.57h62.344v26.559c8.2852-12.781 23.109-30.961 56.188-30.961 41.02 0 71.777 26.809 71.777 84.422z"/>
+</svg>
+
+<!-- Instagram icon -->
+<a href="https://www.instagram.com/sowetan_live/?hl=en"><?xml version="1.0" encoding="UTF-8"?>
+<svg class="icon" width="512pt" height="512pt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="m305 256c0 27.062-21.938 49-49 49s-49-21.938-49-49 21.938-49 49-49 49 21.938 49 49z"/>
+<path d="m370.59 169.3c-2.3555-6.3828-6.1133-12.16-10.996-16.902-4.7422-4.8828-10.516-8.6406-16.902-10.996-5.1797-2.0117-12.961-4.4062-27.293-5.0586-15.504-0.70703-20.152-0.85938-59.402-0.85938-39.254 0-43.902 0.14844-59.402 0.85547-14.332 0.65625-22.117 3.0508-27.293 5.0625-6.3867 2.3555-12.164 6.1133-16.902 10.996-4.8828 4.7422-8.6406 10.516-11 16.902-2.0117 5.1797-4.4062 12.965-5.0586 27.297-0.70703 15.5-0.85938 20.148-0.85938 59.402 0 39.25 0.15234 43.898 0.85938 59.402 0.65234 14.332 3.0469 22.113 5.0586 27.293 2.3594 6.3867 6.1133 12.16 10.996 16.902 4.7422 4.8828 10.516 8.6406 16.902 10.996 5.1797 2.0156 12.965 4.4102 27.297 5.0625 15.5 0.70703 20.145 0.85547 59.398 0.85547 39.258 0 43.906-0.14844 59.402-0.85547 14.332-0.65234 22.117-3.0469 27.297-5.0625 12.82-4.9453 22.953-15.078 27.898-27.898 2.0117-5.1797 4.4062-12.961 5.0625-27.293 0.70703-15.504 0.85547-20.152 0.85547-59.402 0-39.254-0.14844-43.902-0.85547-59.402-0.65234-14.332-3.0469-22.117-5.0625-27.297zm-114.59 162.18c-41.691 0-75.488-33.793-75.488-75.484s33.797-75.484 75.488-75.484c41.688 0 75.484 33.793 75.484 75.484s-33.797 75.484-75.484 75.484zm78.469-136.31c-9.7422 0-17.641-7.8984-17.641-17.641s7.8984-17.641 17.641-17.641 17.641 7.8984 17.641 17.641c-0.003906 9.7422-7.8984 17.641-17.641 17.641z"/>
+<path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm146.11 316.61c-0.71094 15.648-3.1992 26.332-6.832 35.684-7.6367 19.746-23.246 35.355-42.992 42.992-9.3477 3.6328-20.035 6.1172-35.68 6.832-15.676 0.71484-20.684 0.88672-60.605 0.88672-39.926 0-44.93-0.17188-60.609-0.88672-15.645-0.71484-26.332-3.1992-35.68-6.832-9.8125-3.6914-18.695-9.4766-26.039-16.957-7.4766-7.3398-13.262-16.227-16.953-26.035-3.6328-9.3477-6.1211-20.035-6.832-35.68-0.72266-15.68-0.89062-20.688-0.89062-60.609s0.16797-44.93 0.88672-60.605c0.71094-15.648 3.1953-26.332 6.8281-35.684 3.6914-9.8086 9.4805-18.695 16.961-26.035 7.3398-7.4805 16.227-13.266 26.035-16.957 9.3516-3.6328 20.035-6.1172 35.684-6.832 15.676-0.71484 20.684-0.88672 60.605-0.88672s44.93 0.17188 60.605 0.89062c15.648 0.71094 26.332 3.1953 35.684 6.8242 9.8086 3.6914 18.695 9.4805 26.039 16.961 7.4766 7.3438 13.266 16.227 16.953 26.035 3.6367 9.3516 6.1211 20.035 6.8359 35.684 0.71484 15.676 0.88281 20.684 0.88281 60.605s-0.16797 44.93-0.88672 60.605z"/>
+</svg></a>
+<div class="w-300"></div>
+
+<!-- WhatsApp icon -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="icon" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+		<path d="m256.06 0h-0.128c-141.15 0-255.94 114.82-255.94 256 0 56 18.048 107.9 48.736 150.05l-31.904 95.104 98.4-31.456c40.48 26.816 88.768 42.304 140.83 42.304 141.15 0 255.94-114.85 255.94-256s-114.78-256-255.94-256zm148.96 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"/>
+</svg>
+</div>
+
+<div class="text">
+    <p class="footeTxt">SowetanLIVE <br>
+        © 2020 Arena Holdings (Pty) Ltd. All rights reserved.
+        Use of this site constitutes acceptance of our terms & conditions and privacy policy.</p>
+</div>
+
+<img class="hold" src="assets/Images/Arena-Holdings-logo-email.jpeg" width="40%">
+ </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<script src="js/opinionScript.js"></script>
+
+</body>
+</html>
