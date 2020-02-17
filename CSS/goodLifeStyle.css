@@ -193,19 +193,11 @@ font-size: 12px;
     font-size: 12px;
 }
 
-/* .hold{
-    position: relative;
-    left: 90px;
-    margin: 10px;
-} */
-
-
-
+/* this is the section that is spesific to Buhle no-one else worked on it */
 .Bstop{
     position: absolute;
     top: 60px;
 }
-
 
 .Bsheading{
     font-family: 'Playfair Display', serif;
@@ -247,8 +239,7 @@ font-size: 12px;
 .BsImg2{
     position: absolute;
    top: 210px;
-   left: 15px;
-    
+   left: 15px; 
 }
 
 .BssubTra{
