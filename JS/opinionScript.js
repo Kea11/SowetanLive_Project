@@ -15,7 +15,7 @@ pressed.addEventListener('click',()=>{
 });
 
 close.goBack('click',()=> {
-window.location = 'OponionPage.html';
+window.location = 'OpinionPage.html';
 });
 
 const back = document.querySelector('.back1');
