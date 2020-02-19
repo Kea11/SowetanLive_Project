@@ -36,20 +36,20 @@
 // subLog.addEventListener('click', () => {
 //     window.location.href = 'SubscribePg.html';
 // });
+
+
 const articleContent = document.querySelector('#Quote1');
 
-const response =   fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=10&cat=movies", {
-	"method": "POST",
-	"headers": {
-		"x-rapidapi-host": "andruxnet-random-famous-quotes.p.rapidapi.com",
-		"x-rapidapi-key": "46383b5a00msh68a33f191428782p1e7a6cjsnbc4612262466",
-		"content-type": "application/x-www-form-urlencoded"
-	},
-	"body": {}
-})
-.then(data => {
-	console.log(data);
-})
-.catch(err => {
-	console.log(err);
-});
+const key = "7944fcc06cmshcdd98a8104b33c1p17390bjsn1fef96bbd219"
+
+const base = "https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=famous&count=10"
+
+const get = async () =>{
+	const response = await fetch(base + key);
+	const data = await response.json();
+	return data;
+};
+
+get()
+.then(data => console.log(data))
+.catch(err => console.log(err));
