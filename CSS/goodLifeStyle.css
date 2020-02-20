@@ -248,6 +248,7 @@ font-size: 12px;
     font-size:1.5em;
     font-weight: bolder;
     color: white;
+    margin: auto;
     text-align: center;
     position: relative;
     bottom: 175px;
@@ -430,10 +431,14 @@ border: 1px solid #de2f20;
    left: 50px;
 }
 
-.PQuote{
+.QuotePic{
+    text-align: justify;
+}
+
+/* .PQuote{
     position: relative;
     right: 15px;
-}
+} */
 
 .last{
     position: relative;
