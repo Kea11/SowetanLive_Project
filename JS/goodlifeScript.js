@@ -25,11 +25,11 @@ const getRates = async () =>{
 getRates()
 .then(data => {
 	Finance = data;
-	articleContent.innerHTML = `<td class="UK" >${Finance.rates.GBP}</td> </p>`;
-	articleContent1.innerHTML = `<td class="UK" >${Finance.rates.USD}</td> </p>`;
-	articleContent2.innerHTML = `<td class="UK" >${Finance.rates.CAD}</td> </p>`;
-	articleContent3.innerHTML = `<td class="UK" >${Finance.rates.SGD}</td> </p>`;
-	articleContent4.innerHTML = `<td class="UK" >${Finance.rates.AUD}</td> </p>`;
+	articleContent.innerHTML = `<td class="UK" >${Finance.rates.GBP.toFixed(2)}</td> </p>`;
+	articleContent1.innerHTML = `<td class="UK" >${Finance.rates.USD.toFixed(2)}</td> </p>`;
+	articleContent2.innerHTML = `<td class="UK" >${Finance.rates.CAD.toFixed(2)}</td> </p>`;
+	articleContent3.innerHTML = `<td class="UK" >${Finance.rates.SGD.toFixed(2)}</td> </p>`;
+	articleContent4.innerHTML = `<td class="UK" >${Finance.rates.AUD.toFixed(2)}</td> </p>`;
 })
 .catch(err => console.log(err));
 
