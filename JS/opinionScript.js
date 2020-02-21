@@ -14,19 +14,19 @@ pressed.addEventListener('click',()=>{
    logo.style.display = 'none';
 });
 
-close.goBack('click',()=> {
-window.location = 'OpinionPage.html';
-});
-
-const back = document.querySelector('.back1');
-
-back.addEventListener('click',()=>{
+close.addEventListener('click',()=> {
     window.history.back();
 });
 
+const back = document.querySelector('#return');
 
-// const nav = document.querySelector('.navbar');
-// const test = document.querySelector('.drop');
+// back.addEventListener('click', () => {
+//     window.location = 'OpinionPage.html';
+// });
+
+
+const nav = document.querySelector('.navbar');
+const test = document.querySelector('.drop');
 
 // test.style.display = 'none';
 
