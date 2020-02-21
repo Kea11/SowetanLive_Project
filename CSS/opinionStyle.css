@@ -152,12 +152,27 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 .opinionSec {
-    margin: 10px;
-    /* border-style: groove; */
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 45px;
+    height: 210px;
+}
+
+.opinionSecArt {
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     top: 40px;
-    /* background-color: #eeeeee; */
-    height: 210px;
+    height: 240px;
+}
+
+.opinionSecLet {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 40px;
+    height: 240px;
 }
 
 .PageLine {
@@ -166,8 +181,36 @@ font-family: 'Merriweather Sans', sans-serif;
     background-color: lightgrey;
     position: relative;
     left: 15px;
+    top: 26px;
+}
+
+.PageLineArt {
+    height: 0.5px;
+    width: 330px;
+    background-color: lightgrey;
+    position: relative;
+    left: 15px;
+    top: 26px;
+}
+
+.PageLineLet {
+    height: 0.5px;
+    width: 330px;
+    background-color: lightgrey;
+    position: relative;
+    left: 15px;
+    top: 21px;
+}
+
+.PageLineCol {
+    height: 0.5px;
+    width: 330px;
+    background-color: lightgrey;
+    position: relative;
+    left: 15px;
     top: 20px;
 }
+
 
 .Ktitle {
     color: #de2f20;
@@ -180,8 +223,15 @@ font-family: 'Merriweather Sans', sans-serif;
 .Ksubhead {
     font-family: 'Playfair Display', serif;
     color: black;
-    margin-left: 6px;
-    font-size: 1.2em;
+    margin-left: 3px;
+    font-size: 1.1em;
+}
+
+.Ksubhead2 {
+    font-family: 'Playfair Display', serif;
+    color: black;
+    margin-left: 3px;
+    font-size: 1.1em;
 }
 
 .para {
@@ -190,7 +240,8 @@ font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 1px;
     color: #252525;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-left: 6px;    
+    margin-left: 6px;
+    line-height: 20px;
 }
 
 a:active {
@@ -201,7 +252,55 @@ a:active {
     color: #999999ff;
     font-size: 10px;
     line-height: 7px;
-    margin-left: 6px;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.Kdate {
+    color: #999999ff;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.Kdate2 {
+    color: #999999ff;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 3px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.KauthArt {
+    color: #999999ff;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.KdateArt {
+    color: #999999ff;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.KauthLet {
+    color: #999999ff;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.KdateLet {
+    color: #999999ff;
+    font-size: 10px;
+    line-height: 7px;
+    margin-left: 5px;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -353,6 +452,27 @@ a:active {
 
 .letText {
     position: relative;
+    top: 150px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.ArtText {
+    position: relative;
+    top: 280px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.EditText {
+    position: relative;
+    top: 280px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.ColText {
+    position: relative;
     top: 280px;
     margin: 10px;
     text-align: justify;
@@ -435,6 +555,16 @@ a:active {
     background-color: #eeeeee;
     position: absolute;
     top: 1500px;
+    bottom: 0;
+    height: 390px;
+    width: 360px;
+    padding: 20px;
+}
+
+.ClickedFooterLet {
+    background-color: #eeeeee;
+    position: absolute;
+    top: 1250px;
     bottom: 0;
     height: 390px;
     width: 360px;
