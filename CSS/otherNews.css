@@ -103,15 +103,15 @@ input[type=text]:focus {
 }
 
 .Hsubnav:hover{
-    color: #FF0000;
+    color:#de2f20 ;
     position: fixed;
 }
 .Gsubnav:hover{
-    color: #FF0000;
+    color:#de2f20 ;
     position: fixed;
 }
 .Osubnav:hover{
-    color: #FF0000;
+    color:#de2f20 ;
     position: fixed;
 }
 
