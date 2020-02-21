@@ -1,5 +1,6 @@
 *{  box-sizing: border-box;
     margin:0;
+    /* overflow-x: hidden; */
 }
 
 
@@ -16,15 +17,17 @@ p{
 }
 
 .logo{
-    position: absolute;
+    position: fixed;
     top:0px;
     width: 140px;
     height: 60px;
+
 }
 
 #main{
     width: 100%;
     height: 100%;
+    position: fixed;
 }
 
 /* modified this code however got it off w3Schools */
@@ -53,7 +56,7 @@ input[type=text]:focus {
 }
 
 .close{
-  position: absolute;
+  position: relative;
   left: 40px;
   top: 40px;
   font-size: 1.5em;
@@ -66,7 +69,7 @@ input[type=text]:focus {
     padding: 20 0;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
-    position: relative;
+    position: fixed;
     left: -16px;
     top: 20px;
     width: 100vw;
@@ -79,52 +82,56 @@ input[type=text]:focus {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.6em;
     color: #252525;
-position: relative;
-left: 120px;
+    position: fixed;
+    left: 120px;
 }
 
 .Gsubnav{
-font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.6em;
     color: #252525;
-    position: relative;
+    position: fixed;
     left: 145px;
 }
 
 .Osubnav{
-font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.6em;
     color: #252525;
-    position: relative;
+    position: fixed;
     left: 145px;
 }
 
 .Hsubnav:hover{
     color: #FF0000;
+    position: fixed;
 }
 .Gsubnav:hover{
     color: #FF0000;
+    position: fixed;
 }
 .Osubnav:hover{
     color: #FF0000;
+    position: fixed;
 }
 
 .navbar {
     color: black;
-    position: absolute;
+    position: fixed;
     left: 300px;
     top: 5px;
-    max-width: 55px;
+    width: 55px;
     height: 50px; 
+    display: block;
 }
 
 #search{
     fill: white;
     width: 20px;
     height: 20px;
-    position: absolute;
-    right: 65px;
-    top: 20px;
+    position: relative;
+    left: 270px;
+    top: -28px;
 }
 
 #bar{
@@ -140,257 +147,66 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 
 #sub{
-    position: absolute;
+    position: relative;
     right: 10px;
     top: 7px;
     color: white;
     font-size: 1em;
 }
 
+.spacer{
+    height: 6vh;
+}
 .headingOne{
     font-family: 'Playfair Display', serif;
     font-size: 2em;
-    position:absolute;
-    left: 25px;
+    position: relative;
     top: 70px;
+    left: 25px;
     text-transform: uppercase;
-    
+    display: block;
 }
 
 .newspaper{
     width: 30px;
     height: 30px;
-    position:absolute;
-    right: 30px;
-    top: 75px;
+    position: relative;
+    left: 300px;
+    top: 30px;
 }
-
-.otherImage{
-    width: 125px;
-    height: 100px;
-    position:absolute;
-    top: 165px;
-    right: 25px;
+.subheadingOne{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.otherNewsImage{
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
 }
 
 .figure-caption{
-    position:absolute;
-    top: 262px;
-    right: 25px;
+    padding-left: 20px;
 }
 
-.subheadingOne{
-    font-family: 'Playfair Display', serif;
-    position:absolute;
-    top: 125px; 
-    left: 25px;
-    font-size: 1.2em 
-
-}
 .para{
-    position:absolute;
-    left: 25px;
-    top: 160px; 
-    width: 160px;
-    height: 100px;
-    text-align: justify;
-    font-family: 'Merriweather Sans', sans-serif;
-    line-height: 17px;
-
-}
-
-.otherImageCor{
-    width: 125px;
-    height: 100px;
-    position:absolute;
-    top: 350px;
-    right: 25px;
-}
-
-.figure-captionTwo{
-    position:absolute;
-    top: 445px;
-    right: 25px;
-}
-
-.subheadingTwo{
-    font-family: 'Playfair Display', serif;
-    position:absolute;
-    top: 310px; 
-    left: 25px;
-    font-size: 1.2em;
-
-}
-.paraTwo{
-    position:absolute;
-    left: 25px;
-    top: 160px; 
-    width: 160px;
-    height: 100px;
-    top: 345px; 
-    text-align: justify; 
+    position:relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
 }
-
 .firstDivider{
-    width: 330px;
+    width: 320px;
     height: 1px;
     background-color: lightgray;
-    position: absolute;
-    top: 295px;
-    left: 15px;
-}
-
-.secondDivider{
-    width: 330px;
-    height: 1px;
-    background-color: lightgray;
-    position: absolute;
-    top: 482px;
-    left: 15px;
-}
-
-.subheadingSmall{
-    font-family: 'Playfair Display', serif;
-    position:absolute;
-    top: 500px; 
-    left: 25px;
-    font-size: 1.2em 
-}
-
-.joburgImage{
-    width: 125px;
-    height: 100px;
-    position:absolute;
-    top: 560px;
-    right: 25px;
-}
-
-.figure-captionThree{
-    position:absolute;
-    top: 655px;
-    right: 25px;
-}
-
-.paraThree{
-    position:absolute;
-    left: 25px;
-    top: 558px; 
-    width: 160px;
-    height: 100px; 
-    text-align: justify; 
-    font-family: 'Merriweather Sans', sans-serif;
-    line-height: 17px;
-}
-
-.thirdDivider{
-    width: 330px;
-    height: 1px;
-    background-color: lightgray;
-    position: absolute;
-    top: 692px;
-    left: 15px;
-}
-
-.pageBreak{
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 40px;
-    position: absolute;
-    top: 720px;
-    left: 0px;
-    width: 360px;
-    line-height: 25px;
-    height: 100px;
-    background-color:#252525;
-    color: white;
-   
-}
-
-.subheadingSmallTwo{
-    font-family: 'Playfair Display', serif;
-    position:absolute;
-    top: 850px; 
-    left: 25px;
-    font-size: 1.2em 
-}
-
-.codingImage{
-    width: 125px;
-    height: 100px;
-    position:absolute;
-    top: 910px;
-    right: 25px;
-}
-
-.figure-captionFour{
-    position:absolute;
-    top: 1005px;
-    right: 25px;
-}
-
-.paraFour{
-    position:absolute;
-    top: 910px;
-    left: 25px;
-    width: 160px;
-    height: 100px; 
-    text-align: justify; 
-    font-family: 'Merriweather Sans', sans-serif;
-    line-height: 17px;
-}
-
-.fourthDivider{
-    width: 330px;
-    height: 1px;
-    background-color: lightgray;
-    position: absolute;
-    top: 1042px;
-    left: 15px;
-}
-
-.subheadingSmallThree{
-    font-family: 'Playfair Display', serif;
-    position:absolute;
-    top: 1058px; 
-    left: 25px;
-    font-size: 1.2em 
-}
-
-.domesticLaw{
-    width: 125px;
-    height: 100px;
-    position:absolute;
-    top: 1124px;
-    right: 25px;
-}
-
-.figure-captionFive{
-    position:absolute;
-    top: 1219px;
-    right: 25px;
-}
-
-.paraFive{
-    position:absolute;
-    top: 1120px; 
-    left: 25px;
-    width: 160px;
-    height: 100px;
-    text-align: justify; 
-    font-family: 'Merriweather Sans', sans-serif;
-    line-height: 17px;
-}
-
-.fifthDivider{
-    width: 330px;
-    height: 1px;
-    background-color: lightgray;
-    position: absolute;
-    top: 1260px;
-    left: 15px;
+    margin-left: 20px;
+    margin-right: 15xpx;
 }
 
 .icon{
@@ -401,11 +217,11 @@ font-family: 'Merriweather Sans', sans-serif;
     left: 60px;
     border-radius: 50%;
     fill: #252525;
+    display: block;
+    z-index: 100;
 }
 .footer{
     background-color: #eeeeee;
-    position: absolute;
-    top: 1285px;
     bottom: 0;
     height: 400px;
     width: 360px;
