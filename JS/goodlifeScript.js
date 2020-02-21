@@ -23,7 +23,7 @@ const getRates = async () =>{
 };
 
 getRates()
-.then(data => {
+.then(data => {  
 	Finance = data;
 	articleContent.innerHTML = `<td class="UK" >${Finance.rates.GBP.toFixed(2)}</td> </p>`;
 	articleContent1.innerHTML = `<td class="UK" >${Finance.rates.USD.toFixed(2)}</td> </p>`;
