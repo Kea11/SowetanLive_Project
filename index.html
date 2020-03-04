@@ -5,10 +5,9 @@
     <meta name="description" content="SowetanLiveHomePage_Latest news updates.Locally and abroad, including the lifestyle and opinion page links">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/homepageStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Playfair+Display:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Sowetan Live Home Page</title>
 </head>
 <body>
@@ -28,6 +27,7 @@
     </div>
        
 </div>
+
     <!-- header section that includes the logo image, user icon, burger nav and the red scetion that has the date and subscription log in. -->
 <div class="header">
 
@@ -50,7 +50,7 @@
         <div class="close" value="Back">X</div>
       <ul id="open" class="navbar-nav mr-auto">
         <form>
-            <input type="text" name="search" style="color: white;" placeholder="Search..">
+            <input class="searchBar" type="text" name="search" style="color: white;" placeholder="Search..">
           </form>
                
         <li class="nav-item">
@@ -79,8 +79,19 @@
           <a style="text-align: center;" class='Osubnav' href="ColoumnistPage.html.html">Coloumnist</a>
           <br>
           <a style="text-align: center;" class='Osubnav' href="EditorialPage.html.html">Editorials</a>
+          <div class="dropDown">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg class="arrowLogOut" width="512" height="512" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg">
+            <path d="m275.56 551.13c-151.94 0-275.56-123.62-275.56-275.56s123.62-275.56 275.56-275.56 275.56 123.62 275.56 275.56-123.62 275.56-275.56 275.56zm0-516.68c-132.96 0-241.12 108.16-241.12 241.12s108.16 241.12 241.12 241.12 241.12-108.16 241.12-241.12-108.16-241.12-241.12-241.12z"/>
+            <path d="m223.9 275.56 120.56-120.56v-51.668l-172.23 172.23 172.23 172.23v-51.668z"/>
+            </svg>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Log Out</a>
+            </div>
         </li>
       </ul>
+  
     </div>    
 
         
