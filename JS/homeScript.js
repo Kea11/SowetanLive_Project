@@ -42,8 +42,18 @@ close.addEventListener('click',()=> {
 window.location = "index.html"
 });
 
-const back = document.querySelector('.back1');
+// const back = document.querySelector('.back1');
 
-back.addEventListener('click',()=>{
-    window.history.back();
+// back.addEventListener('click',()=>{
+//     window.history.back();
+// });
+const dropDowns = document.querySelector('.arrowLogOut');
+const show = document.querySelector('#myDropdown');
+
+dropDowns.addEventListener('click',()=>{
+    show.style.display = "block";
+});
+
+show .addEventListener('click', ()=>{
+    window.location = "logIn.html";
 });
