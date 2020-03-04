@@ -33,3 +33,22 @@ const test = document.querySelector('.drop');
 // nav.addEventListener('click', () => {
 //     test.style.display = 'block';
 // });
+
+
+
+// const head = document.querySelector('.header');
+// const page = document.querySelector('.opinionContent');
+// const foot = document.querySelector('.footer');
+// const signUp = document.querySelector('.signUp');
+// const register = document.querySelector('#register');
+
+// head.style.display = 'none';
+// page.style.display = 'none';
+// foot.style.display = 'none';
+
+// register.addEventListener('click', () => {
+//     head.style.display = 'block';
+//     page.style.display = 'block';
+//     foot.style.display = 'block';
+//     signUp.style.display = 'none';
+// });
