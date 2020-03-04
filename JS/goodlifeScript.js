@@ -84,6 +84,7 @@
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
+const button = document.querySelector('.RegClass');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -101,6 +102,10 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+button.addEventListener('click',()=>{
+  window.location.href = 'goodlifeWithLifestyleBlogs.html'
+});
 
 
 
