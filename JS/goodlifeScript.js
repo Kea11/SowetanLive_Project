@@ -63,26 +63,44 @@
 //     window.location= 'goodlifeWithLifestyleBlogs.html';
 // });
 
-const PopUp = document.querySelector('.forForm') 
-const Pop = document.querySelector('.RegClass');
-const head = document.querySelector('.header')
-const content = document.querySelector('.imagesSec')
-const foot = document.querySelector('.footer');
+// const PopUp = document.querySelector('.forForm') 
+// const Pop = document.querySelector('.RegClass');
+// const head = document.querySelector('.header')
+// const content = document.querySelector('.imagesSec')
+// const foot = document.querySelector('.footer');
 
-PopUp.style.display = "block";
-head.style.display = 'none';
-content.style.display = 'none';
-foot.style.display = 'none';
+// PopUp.style.display = "block";
+// head.style.display = 'none';
+// content.style.display = 'none';
+// foot.style.display = 'none';
 
-Pop.addEventListener('click',()=>{
-	PopUp.style.display = "none";
-	head.style.display = 'block';
-content.style.display = 'block';
-foot.style.display = 'block';
+// Pop.addEventListener('click',()=>{
+// 	PopUp.style.display = "none";
+// 	head.style.display = 'block';
+// content.style.display = 'block';
+// foot.style.display = 'block';
 
-});
+// });
 
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 
