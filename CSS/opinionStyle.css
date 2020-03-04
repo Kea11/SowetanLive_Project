@@ -577,3 +577,57 @@ a:active {
     from {transform: translateX(-120px);opacity: 0;}
     to {transform: translateX(10px);opacity: 1;}
 }
+
+
+
+
+/* Log In Page */
+.loginForm {
+    margin: 80px 0;
+}
+
+.popUpHeading {
+    text-align: center;
+}
+
+.loginDiv {
+    width: 360px;
+    height: 100vh;
+    background: linear-gradient( lightgray, black);
+    padding:50px 100px ;
+    border: #252525 1.5px solid;
+    transition: 0.5s;
+}
+
+.popUpHead {
+    color: #de2f20;
+    font-size: 30px;
+
+}
+
+.logBut {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.8em;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    color: #de2f20;
+    background-color:white;
+    border: 1px solid #de2f20;
+}
+
+.formArrow {
+    background-color:#de2f20;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 220px;
+    top: 325.7px;
+}
+
+.logIn {
+    position: relative;
+    bottom: 150px;
+    text-align: center;
+}
