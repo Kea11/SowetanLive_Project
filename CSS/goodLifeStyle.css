@@ -3,7 +3,6 @@
     margin:0;
 }
 
-
 h1{
     font-family: 'Playfair Display', serif;
 }
@@ -20,7 +19,7 @@ h2 {
 }
 
 /* modified this code however got it off w3Schools*/
-input[type=text] {
+.searchBar {
     width: 130px;
     box-sizing: border-box;
     border: 1px solid #252525;
@@ -34,7 +33,7 @@ input[type=text] {
       color: white;
   }
   
-  input[type=text]:focus {
+  .searchBar:focus {
     width: 100%;
   }
 /* w3Schools code */
@@ -143,7 +142,7 @@ font-family: 'Merriweather Sans', sans-serif;
     background-color: #de2f20;
     position: fixed;
     height: 60px;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
 }
 
@@ -296,7 +295,7 @@ font-size: 12px;
   left: 110px;
 }
 
-button{
+ button{
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.8em;
     width: 150px;
@@ -305,6 +304,43 @@ button{
     color: #de2f20;
     background-color:white;
     border: 1px solid #de2f20;
+}
+
+.forForm{
+    width: 360px;
+    height: 100vh;
+    background: linear-gradient( lightgray, black);
+    padding:50px 100px ;
+    border: #252525 1.5px solid;
+    transition: 0.5s;
+}
+.popUpHead{
+    color: #de2f20;
+    font-size: 30px;
+
+}
+.popUpHeading{
+    text-align: center;
+}
+
+.forForm input{
+    background-color: white;
+}
+
+.Formarrow{
+    background-color:#de2f20;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 225px;
+    top: 490px;
+}
+
+.signIn{
+    position: relative;
+    bottom: 80px;
+    text-align: center;
 }
 
 .arrow{
