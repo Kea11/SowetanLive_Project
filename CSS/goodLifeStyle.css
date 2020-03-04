@@ -295,7 +295,19 @@ font-size: 12px;
   left: 110px;
 }
 
- button{
+/* Styling for all the buttons on the good life section */
+ #OriginalBut{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.8em;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    color: #de2f20;
+    background-color:white;
+    border: 1px solid #de2f20;
+}
+
+.RegClass{
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.8em;
     width: 150px;
@@ -333,8 +345,8 @@ font-size: 12px;
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 225px;
-    top: 490px;
+    left: 221px;
+    top: 363px;
 }
 
 .signIn{
@@ -489,3 +501,24 @@ text-align: center;
     from {transform: translateX(-120px);opacity: 0;}
     to {transform: translateX(10px);opacity: 1;}
 }
+
+/* to test the button that shows on scroll */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #de2f20;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
