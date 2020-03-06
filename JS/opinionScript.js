@@ -54,6 +54,14 @@ const test = document.querySelector('.drop');
 // });
 
 
+
+const loginBut = document.querySelector('.logInBut');
+// const registerBut = document.querySelector('.registerBut');
+
+loginBut.addEventListener('click', () => {
+    
+})
+=======
 // Log out
 
 const dropDowns = document.querySelector('.arrowLogOut');
@@ -92,3 +100,4 @@ function topFunction() {
 button.addEventListener('click',()=>{
   window.location.href = 'goodlifeWithLifestyleBlogs.html'
 });
+

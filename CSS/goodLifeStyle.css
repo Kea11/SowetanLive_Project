@@ -335,24 +335,23 @@ font-size: 12px;
     text-align: center;
 }
 
-.forForm input{
-    background-color: white;
-}
 
-.Formarrow{
-    background-color:#de2f20;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 221px;
-    top: 363px;
-}
-
-.signIn{
+.login{
+    font-size: 15px;
     position: relative;
-    bottom: 80px;
+    top: 80px;
     text-align: center;
+}
+
+.alwaysLogOut{
+    background-color: #de2f20;
+    color: white;
+    font-size: 15px;
+    border-radius: 40px;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: 40px;
 }
 
 .arrow{
