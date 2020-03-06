@@ -643,3 +643,133 @@ a:active {
     bottom: 150px;
     text-align: center;
 }
+
+
+/* Log out */
+.dropDown{
+    position: absolute;
+    top: 530px;
+    left: 83%;
+}
+
+#myDropdown{
+    display: none;
+    font-size: 0.6em;
+    position: absolute;
+    left: 56%;
+    top:83%;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#myDropdown a{
+    color: #de2f20;
+    padding: 8px;
+    text-align: center;
+}
+.arrowLogOut{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Register */
+.Pic1{
+    position: absolute;
+    bottom: 40px;
+    left: 8px;
+}
+
+.BsImg1{
+    position: absolute;
+    left: 15px;
+}
+
+.BssubWed{
+    font-family: 'Playfair Display', serif;
+    font-size:1.5em;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+
+.BsImg2{
+    position: absolute;
+   top: 210px;
+   left: 15px; 
+}
+
+.BssubTra{
+    font-family: 'Playfair Display', serif;
+    font-size:1.5em;
+    font-weight: bolder;
+    color: white;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    bottom: 175px;
+    
+}
+
+.BsImg3{
+    position: absolute;
+    top: 420px;
+   left: 15px;
+}
+
+.BssubHealth{
+    font-family: 'Playfair Display', serif;
+    font-size:1.5em;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 175px;
+    
+}
+
+.BsImg4{
+    position: absolute;
+    top: 650px;
+    left: 15px;
+}
+
+.BssubFin{
+    font-family: 'Playfair Display', serif;
+    font-size:1.5em;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+
+
+/* Register / Log In Button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    background-color: #de2f20;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
