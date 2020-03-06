@@ -56,4 +56,6 @@ dropDowns.addEventListener('click',()=>{
 
 show .addEventListener('click', ()=>{
     window.location = "logIn.html";
-});
+}); 
+
+

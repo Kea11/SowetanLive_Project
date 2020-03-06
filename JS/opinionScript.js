@@ -52,3 +52,11 @@ const test = document.querySelector('.drop');
 //     foot.style.display = 'block';
 //     signUp.style.display = 'none';
 // });
+
+
+const loginBut = document.querySelector('.logInBut');
+// const registerBut = document.querySelector('.registerBut');
+
+loginBut.addEventListener('click', () => {
+    
+})
