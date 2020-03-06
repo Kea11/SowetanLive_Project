@@ -6,17 +6,17 @@ const close = document.querySelector('.close');
 const logo = document.querySelector('.log');
 
 
-pressed.addEventListener('click',()=>{
-   opened.style.backgroundColor = 'white';
-   opened.style.display = 'block';
-   close.style.display = 'block';
-   pressed.style.display = 'none';
-   logo.style.display = 'none';
-});
+// pressed.addEventListener('click',()=>{
+//    opened.style.backgroundColor = 'white';
+//    opened.style.display = 'block';
+//    close.style.display = 'block';
+//    pressed.style.display = 'none';
+//    logo.style.display = 'none';
+// });
 
-close.addEventListener('click',()=> {
-    window.history.back();
-});
+// close.addEventListener('click',()=> {
+//     window.history.back();
+// });
 
 const back = document.querySelector('#return');
 
@@ -56,39 +56,72 @@ const test = document.querySelector('.drop');
 
 // Log out
 
-const dropDowns = document.querySelector('.arrowLogOut');
-const show = document.querySelector('#myDropdown');
+// const dropDowns = document.querySelector('.arrowLogOut');
+// const show = document.querySelector('#myDropdown');
 
-dropDowns.addEventListener('click',()=>{
-    show.style.display = "block";
-});
+// dropDowns.addEventListener('click',()=>{
+//     show.style.display = "block";
+// });
 
-show.addEventListener('click', ()=>{
-    window.location = "logIn.html";
-});
+// show.addEventListener('click', ()=>{
+//     window.location = "logIn.html";
+// });
 
 
 //Get the button
-var mybutton = document.getElementById("myBtn");
-const button = document.querySelector('.RegClass');
+// var mybutton = document.getElementById("myBtn");
+// const button = document.querySelector('.RegClass');
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
-button.addEventListener('click',()=>{
-  window.location.href = 'goodlifeWithLifestyleBlogs.html'
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+// button.addEventListener('click',()=>{
+//   window.location.href = 'goodlifeWithLifestyleBlogs.html'
+// });
+
+
+// --------------------------------------------------------------
+
+// Testing
+const btn = document.querySelector('button');
+const form = document.querySelector('.loginForm');
+const email = document.querySelector('.email');
+const password = document.querySelector('#LogPass');
+
+
+
+let savedEmail = localStorage.getItem('email');
+let savedPass = localStorage.getItem('LogPass');
+
+form.addEventListener('keyup', e => {
+  e.preventDefault();
+  localStorage.setItem('email', email);
+  localStorage.setItem('password', password);
 });
+
+
+
+// Show password
+function myFunction() {
+  var x = document.getElementById("LogPass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+} 
