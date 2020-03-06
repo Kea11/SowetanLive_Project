@@ -4,11 +4,13 @@
 // const logo = document.querySelector('.log');
 
 // const back = document.querySelector('.back1');
+// const mybutton = document.getElementById("myBtn");
 
-
-
-
-
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
 // const articleContent = document.querySelector('.UK');
 // const articleContent1 = document.querySelector('.US');
@@ -45,69 +47,120 @@
 //    logo.style.display = 'none';
 // });
 
-// pressPg.addEventListener('click',()=>{
-//     opened.style.backgroundColor = 'white';
-//     opened.style.display = 'block';
-//     close.style.display = 'block';
-//     pressed.style.display = 'none';
-//     logo.style.display = 'none';
-//  });
-
 // close.addEventListener('click', ()=> {
 // window.location = 'goodlifeWithLifestyleBlogs.html'
 // });
 
 
 
-// back.addEventListener('click',()=>{
-//     window.location= 'goodlifeWithLifestyleBlogs.html';
+// // back.addEventListener('click',()=>{
+// //     window.location= 'goodlifeWithLifestyleBlogs.html';
+// // });
+
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   };
+// };
+
+// const dropDowns = document.querySelector('.arrowLogOut');
+// const show = document.querySelector('#myDropdown');
+
+// dropDowns.addEventListener('click',()=>{
+//     show.style.display = "block";
 // });
 
-// const PopUp = document.querySelector('.forForm') 
-// const Pop = document.querySelector('.RegClass');
-// const head = document.querySelector('.header')
-// const content = document.querySelector('.imagesSec')
-// const foot = document.querySelector('.footer');
 
-// PopUp.style.display = "block";
-// head.style.display = 'none';
-// content.style.display = 'none';
-// foot.style.display = 'none';
-
-// Pop.addEventListener('click',()=>{
-// 	PopUp.style.display = "none";
-// 	head.style.display = 'block';
-// content.style.display = 'block';
-// foot.style.display = 'block';
-
-// });
-
-//Get the button
-var mybutton = document.getElementById("myBtn");
-const button = document.querySelector('.RegClass');
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+function myFunction() {
+  let put = document.getElementById('pass');
+  if (put.type === "password") {
+    put.type = "text";
   } else {
-    mybutton.style.display = "none";
+    put.type = "password";
   }
-}
+};
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+const change = document.querySelector('#regis');
+const loginPage = document.querySelector('.log');
+const regPage = document.querySelector('.reg');
 
-button.addEventListener('click',()=>{
-  window.location.href = 'goodlifeWithLifestyleBlogs.html'
+regPage.style.display = 'none'
+
+change.addEventListener('click',()=>{
+    loginPage.style.display = 'none';
+    regPage.style.display = 'block';
 });
 
+const Register = document.querySelector('.register');
+const logIn = document.querySelector('.loginForm');
+const logOut = document.querySelector('button');
+ 
+const username =localStorage.getItem('username');
+const password =localStorage.getItem('password');
+let loggedIn =localStorage.getItem('loggedIn');
 
+loggedIn = JSON.parse(loggedIn);
 
+const msg =document.querySelector('.msg');
 
+if(loggedIn){
+    msg.innerText = 'You Are Logged In';
+}else{
+    msg.innerText = 'You Are Logged Out';
+}
 
+Register.addEventListener('click', e=>{
+    e.preventDefult();
+const username =localStorage.getItem('username');
+const password =localStorage.getItem('password');
+let loggedIn =localStorage.getItem('loggedIn');
+
+loggedIn = JSON.parse(loggedIn);
+window.location = 'goodlifeWithLifestyleBlogs.html';
+
+const newUsername =Register.username.value;
+const newPassword =Register.password.value;
+const otherMsg = document.querySelector('.othermsg');
+
+if(!username && !password && !loggedIn){
+    localStorage.setItem('username','newUsername');
+    localStorage.setItem('password','newPassword');
+    msg.innerText = 'You Are Logged In';
+}else if(username && newUsername === username && !loggedIn) {
+    otherMsg.innerText = 'That username already exsists!';
+    msg.innerText = 'You Are Looged Out';
+};
+Register.reset();
+});
+
+logIn.addEventListener('submit', e =>{
+    e.preventDefault();
+    const newUsername = logIn.username.value;
+    const newPassword = logIn.password.value;
+
+    const username =localStorage.getItem('username');
+    const password =localStorage.getItem('password');
+    let loggedIn =localStorage.getItem('loggedIn');
+
+    loggedIn = JSON.parse(loggedIn);
+
+    if(newPassword=== password && newUsername === username && ! loggedIn){
+        localStorage.setItem('loggedIn','true');
+        msg.innerText ='You Are Logged In';
+    }else if(loggedIn){
+        otherMsg.innerText ='You Are Already Logged In';
+    }else if (username === newUsername && newPassword !== password && !loggedIn){
+        otherMsg.innerText ='This Is The Wrong Password';
+    }
+    logIn.reset();
+});
+
+logOut.addEventListener('click',()=>{
+    localStorage.setItem('logIn','false');
+    msg.innerText = 'You Are Logged Out';
+});

@@ -588,32 +588,44 @@ a:active {
 
 .popUpHeading {
     text-align: center;
+    font-size: 50px;
 }
 
-.loginDiv {
+.portal {
     width: 360px;
     height: 100vh;
+    padding-top: 80px;
     background: linear-gradient( lightgray, black);
-    padding:50px 100px ;
     border: #252525 1.5px solid;
     transition: 0.5s;
 }
 
 .popUpHead {
     color: #de2f20;
-    font-size: 30px;
+    font-size: 50px;
 
 }
 
-.logBut {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 0.8em;
-    width: 150px;
-    height: 30px;
-    border-radius: 50px;
-    color: #de2f20;
-    background-color:white;
-    border: 1px solid #de2f20;
+.logInBut {
+    background-color: rgb(4, 114, 4);
+    color: white;
+    font-size: 15px;
+    width: 100px;
+    height: 60px;
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+
+.registerBut {
+    background-color: #de2f20;
+    color: white;
+    font-size: 15px;
+    width: 100px;
+    height: 60px;
+    position: relative;
+    left: 80px;
+    top: 100px;
 }
 
 .formArrow {
