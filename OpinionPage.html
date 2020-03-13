@@ -68,6 +68,16 @@
           <a style="text-align: center;" class='Osubnav' href="ColoumnistPage.html">Coloumnist</a>
           <br>
           <a style="text-align: center;" class='Osubnav' href="EditorialPage.html">Editorials</a>
+          <div class="dropDown">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg class="arrowLogOut" width="512" height="512" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg">
+            <path d="m275.56 551.13c-151.94 0-275.56-123.62-275.56-275.56s123.62-275.56 275.56-275.56 275.56 123.62 275.56 275.56-123.62 275.56-275.56 275.56zm0-516.68c-132.96 0-241.12 108.16-241.12 241.12s108.16 241.12 241.12 241.12 241.12-108.16 241.12-241.12-108.16-241.12-241.12-241.12z"/>
+            <path d="m223.9 275.56 120.56-120.56v-51.668l-172.23 172.23 172.23 172.23v-51.668z"/>
+            </svg>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Log Out</a>
+          </div>
         </li>
       </ul>
     </div>   
@@ -116,6 +126,9 @@
             
             <div class="PageLineArt"></div>
         
+
+            <!-- login and Register button -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="assets/GoodLife Images/rect823.png" alt="logo" width="100px" height="40px"> <br> <a href="Register.html" style="color: white; font-size: 15px;"> <u>Register</u> /</a> <a href="login.html" style="color: white;font-size: 15px;"> <u>Log In</u></a> </button> 
         
         
             <!------------------- THE LETTER SECTION ------------------->
@@ -172,31 +185,66 @@
         
             <form class="form" action="">
               <p class="FormText">NAME:</p>
-              <label for="name"><input style="background-color: white;" type="text" placeholder="Type your name here" id="name"></label>
+              <label for="name"><input style="background-color: white;" type="text" placeholder="Type your name here" id="name" required></label>
               <br>
               <p class="FormText">EMAIL:</p>
               <label for="email"><input style="background-color: white;" type="text" placeholder="Type email address here" id="email"></label>
               <br>
               <p class="FormText">ARTICLE:</p>
-              <label for="articleName"><input style="background-color: white;" type="text" placeholder="Name of article" id="article"></label>
+              <label for="articleName"><input style="background-color: white;" type="text" placeholder="Name of article" id="article" required></label>
               <br>
               <p class="FormText">COMMENT:</p>
-              <label for="comment"><textarea name="message" id="comment" cols="20" rows="5" placeholder="Add comment here"></textarea></label>
+              <label for="comment"><textarea name="message" id="comment" cols="20" rows="5" placeholder="Add comment here" required></textarea></label>
 
               <input id="checkbox" type="checkbox"><p id="TnC">I agree to the Terms & Conditions</p>
-            </form>
-        
-
-            <button id="submit" type="submit">SUBMIT</button>
             
+            
+
+              <button class="btn" id="submit" type="submit">SUBMIT</button>
           
               <div class="arrow"><?xml version="1.0" encoding="UTF-8"?>
                 <svg id="iarrow" enable-background="new 0 0 492.004 492.004" version="1.1" viewBox="0 0 492 492" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                   <path d="m382.68 226.8-218.95-218.94c-5.064-5.068-11.824-7.86-19.032-7.86s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064l183.86 183.86-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86l219.15-219.14c5.076-5.084 7.864-11.872 7.848-19.088 0.016-7.244-2.772-14.028-7.848-19.108z"/>
               </svg>
               </div>
+            </form>
+            
         </div>
     </div> <!--end of page content-->
+
+    <br><br><br>
+
+    <h3 class="text-center m-5">News</h3>
+    <div class="NewsComm mt-5 mx-3"></div>
+    <br>
+    <h3 class="text-center">Celebrities</h3>
+    <div class="CelebComm"></div>
+    <br>
+    <h3 class="text-center">Other News</h3>
+    <div class="OtherComm"></div>
+
+    <!-- <div class="adding mt-5 mx-3">
+      <label for="recipe">Add a Comment</label>
+      <div class="input-group">
+        <input class="form-control" type="text" id="userComment" required>
+        <div class="input-group-append">
+            <input type="submit" value="add" class="btn btn-outline-secondary">
+        </div>
+      </div>
+    </div> -->
+
+    <br><br>
+
+    <h4 class="text-center">SUBSCRIBE TO OUR NEWSLETTER</h4>
+    <form class="form-inline subscribe p-3" style="background-color: #de2f20;">
+      <div class="m-3">
+        <label for="subscribe" style="margin-left: 85px;"><b>SUBSCRIBE NOW</b></label>
+        <input type="text" class="form-control" style="margin-left: 30px;" placeholder="Enter Your Email Id" aria-describedby="button-addon2" id="subsEmail">
+
+        <button class="btn btn-outline-secondary bg-light" style="border-radius: 30%; margin-left: 100px; margin-top: 20px;" type="submit" id="">Subscribe</button>
+      
+      </div>
+    </form>
 
 
 
@@ -279,6 +327,34 @@
                             <!-- -------------------------------------------------------------------------- -->
 
   
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCzvGqsLFF4OBohteJ2p_-CnR6P26TgCrs",
+        authDomain: "sowetanopinionpage.firebaseapp.com",
+        databaseURL: "https://sowetanopinionpage.firebaseio.com",
+        projectId: "sowetanopinionpage",
+        storageBucket: "sowetanopinionpage.appspot.com",
+        messagingSenderId: "342960335447",
+        appId: "1:342960335447:web:9d260809d1b1e0560e5112",
+        measurementId: "G-J342NEGJP2"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      firebase.analytics();
+      firebase.analytics();
+    </script>
 
 
 
