@@ -175,10 +175,26 @@
 <p class="opinionPara">Lorem magna aliqua. Ut <br>  enim ad minim veniam</p>
 </div>
 
-<div class="footer">
-     
-<!-- footer section.  -->
+<!-- login and Register button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="assets/GoodLife Images/rect823.png" alt="logo" width="100px" height="40px"> <br> <a href="Register.html" style="color: white; font-size: 15px;"> <u>Register</u> /</a> <a href="login.html" style="color: white;font-size: 15px;"> <u>Log In</u></a> </button> 
 
+<div class=" container newsSectionAdded">
+   
+  <h3 class="headingFornewsSection"></h3>
+  <p class="articleForNewNewsSection"></p>
+  <div class="toDateTime"></div>
+</div>
+
+
+<div class="container imageAddition">
+  <h4 class="headingImages">Editor's Picks</h4>
+  
+</div>
+
+
+
+<!-- footer section.  -->
+<div class="footer">
 <div class="text">
 
   <p class="footeTxt"> <strong>SowetanLIVE</strong>  </p>
@@ -239,15 +255,38 @@
 
  </div>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBZO8UPd44MIAWVWCE4QQRFHUfTYC6ns1E",
+    authDomain: "sowetanlivedatabase.firebaseapp.com",
+    databaseURL: "https://sowetanlivedatabase.firebaseio.com",
+    projectId: "sowetanlivedatabase",
+    storageBucket: "sowetanlivedatabase.appspot.com",
+    messagingSenderId: "674275213833",
+    appId: "1:674275213833:web:5018e13ca674794eaf2ed8",
+    measurementId: "G-GGS2YXRE40"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  firebase.analytics();
+</script>
 
 
-
-
-
-
-    <script src="JS/homeScript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="JS/homeScript.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
