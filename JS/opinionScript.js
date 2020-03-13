@@ -237,17 +237,6 @@ const addOther = (other, id) => {
 }
 
 
-// db.collection('Sports').get().then((snapshot) => {
-  
-//   snapshot.docs.forEach(doc => {
-//     console.log(doc.id);
-//     addOther(doc.data(), doc.id);
-
-//   });
-
-// }).catch(err => {
-//   console.log(err);
-// });
 
 
 
@@ -289,7 +278,7 @@ db.collection('Sports').onSnapshot(snapshot => {
 
 
 
-// Adding a comment
+// Adding a comment (linked to the "Have Your Say" form)
 
 const btn = document.querySelector('button');
 const form = document.querySelector('.form');
@@ -297,12 +286,10 @@ const form = document.querySelector('.form');
 form.addEventListener('submit', e => {
   e.preventDefault();
   
-  //const now = new Date();
   const comments = {
     title: form.article.value,
     comment: form.comment.value,
     writer: form.name.value
-    //written_at: firebase.firestore.Timestamp.fromDate(now)
   };
 
   db.collection('Sports').add(comments).then(() => {
@@ -315,7 +302,7 @@ form.addEventListener('submit', e => {
 
 
 
-// Subscribe
+// Subscribe Section
 
 const subscribe = document.querySelector('.subscribe');
 
@@ -333,12 +320,3 @@ subscribe.addEventListener('submit', e => {
   });
 });
 
-
-// const addEmail = (emailAdd) => {
-//   console.log(emailAdd.email);
-// }
-
-// db.collection('Subscribers').get().then((snapshot) => {
-//   //console.log(snapshot.docs[0].data());
-
-// });
