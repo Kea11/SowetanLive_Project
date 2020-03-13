@@ -219,6 +219,8 @@ font-family: 'Merriweather Sans', sans-serif;
    
 }
 
+/* log out button css */
+
 .dropDown{
     position: absolute;
     top: 530px;
@@ -416,6 +418,72 @@ font-family: 'Merriweather Sans', sans-serif;
     line-height: 17px;
 }
 
+/*new section added with database styling . First Addition*/
+
+.newsSectionAdded{
+    position: relative;
+    top: 650px;
+}
+
+.headingFornewsSection{
+    margin-top: 15px;
+}
+
+.empty{
+    margin-top: 20px;
+    width: 300px;
+    height: 1px;
+    background-color: lightgray;
+
+}
+
+/*second addition of images and captions*/
+
+.headingImages{
+    position: relative;
+    top: -865px;
+    left: 15px;
+}
+
+.imageAddition{
+    position: relative;
+    top: 710px;
+}
+
+.imageDivider{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 1px;
+    background-color: lightgray;
+}
+
+/* last section to be added that allows the user to add and delete data */
+
+.factsHeading{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.factsSection{
+    position: relative;
+    top: 800px;
+}
+
+.facts{
+    position: relative;
+    top: 800px;
+}
+
+form{
+    position: relative;
+    top:350px;
+    width: 300px;
+    margin-left: 15px;
+}
+
 
 /* code for the popup */
 
@@ -462,6 +530,28 @@ font-family: 'Merriweather Sans', sans-serif;
     to {transform: translateX(10px);opacity: 1;}
 }
 
+/* to test the button that shows on scroll */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    background-color: #de2f20;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
 .icon{
     width: 40px;
     height: 40px;
@@ -474,7 +564,7 @@ font-family: 'Merriweather Sans', sans-serif;
 .footer{
     background-color: #eeeeee;
     position: absolute;
-    top: 1350px;
+    top: 7600px;
     bottom: 0;
     height: 400px;
     width: 360px;

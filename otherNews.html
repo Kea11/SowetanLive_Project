@@ -98,14 +98,25 @@
 <div class="spacer"></div>
 <div class="articles"></div>
 
-
-   
-
-        
-
-
-
 </div>
+
+<!-- adding the third collection on this page -->
+  <div class="collectionThree">
+    <h4 class="mt-25 mx-4" >Facts You Never Knew About SA</h4>
+
+    <h5 class="mt-25 mx-4 titleThree"></h5>
+    <form id="formTwo">
+      <label class="mx-4" for="addingFacts">Add Your Interesting Facts Here</label>
+      <div class="mx-4 input-group">
+      <input type="text" class="form-control" id="userFacts" required>
+      <div class="input-group-append">
+          <input type="submit" value="add" class="btn btn-outline-secondary">
+      </div>
+      </div>
+  </form>
+  </div>
+
+  <div class="addTest"></div>
 
 
 <div class="footer">
@@ -172,8 +183,38 @@
   
    </div>
   
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBZO8UPd44MIAWVWCE4QQRFHUfTYC6ns1E",
+    authDomain: "sowetanlivedatabase.firebaseapp.com",
+    databaseURL: "https://sowetanlivedatabase.firebaseio.com",
+    projectId: "sowetanlivedatabase",
+    storageBucket: "sowetanlivedatabase.appspot.com",
+    messagingSenderId: "674275213833",
+    appId: "1:674275213833:web:5018e13ca674794eaf2ed8",
+    measurementId: "G-GGS2YXRE40"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  firebase.analytics();
+</script>
+
+  <script src="JS/databaseOtherNews.js"></script>
    <script src="JS/otherNews.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
