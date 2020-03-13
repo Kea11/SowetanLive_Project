@@ -139,3 +139,6 @@ db.collection('Images').get().then((snapshot)=>{
 }).catch(err=>{
     console.log(err);
 });
+
+}); 
+
