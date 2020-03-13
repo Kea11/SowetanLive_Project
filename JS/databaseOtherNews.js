@@ -1,5 +1,6 @@
 const three = document.querySelector('.addTest');
 const formTwo = document.querySelector('#formTwo');
+const formThree = document.querySelector('#formThree');
 
 const button = document.querySelector('button');
 
@@ -12,7 +13,7 @@ const addFact = (facts, id) => {
    <p class=" textThree">${facts.Text}</p>    
    <caption class="mt-25 mx-4 captionThree">${time}</caption>
    <br>
-   <button class="btn btn-dark btn-sm my-2">Delete</button>
+   <button class="btn btn-outline-danger btn-sm my-2">Delete</button>
    </li>
    </div>
     
@@ -75,4 +76,19 @@ three.addEventListener('click', e => {
   }
 });
 
+//saving the email address
+formThree.addEventListener('submit', e => {
+  e.preventDefault();
 
+  const now = new Date();
+  const sub = {
+    title: formThree.exampleEmail.value,
+    created_at: firebase.firestore.Timestamp.fromDate(now)
+  };
+
+  db.collection('Subscribe').add(sub).then(() => {
+    console.log('email added');
+  }).catch(err => {
+    console.log(err);
+  });
+});
